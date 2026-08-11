@@ -183,6 +183,10 @@
 	color: var(--mq-admin-text);
 }
 
+.mq-support-card {
+	margin-top: 16px;
+}
+
 .mq-toggle {
 	display: inline-flex;
 	align-items: center;

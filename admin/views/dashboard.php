@@ -124,5 +124,22 @@ $linked_cf7_count = count( musomo_quote_get_linked_cf7_form_ids() );
 	<?php echo esc_html__( 'Use CF7 Template to generate the Contact Form 7 form and email.', 'musomo-quote' ); ?>
 </p>
 
+<div class="mq-card mq-support-card">
+	<h3 class="mq-card__title"><?php echo esc_html__( 'Support Musomo Quote', 'musomo-quote' ); ?></h3>
+	<p class="mq-card__text">
+		<?php echo esc_html__( 'If Musomo Quote is useful for your store or projects, you can support its continued development.', 'musomo-quote' ); ?>
+	</p>
+	<p style="margin:12px 0 0;">
+		<a
+			class="mq-admin-btn mq-admin-btn--ghost"
+			href="<?php echo esc_url( 'https://ko-fi.com/musomo' ); ?>"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<?php echo esc_html__( 'Support on Ko-fi', 'musomo-quote' ); ?>
+		</a>
+	</p>
+</div>
+
 <?php
 include MUSOMO_QUOTE_PATH . 'admin/views/partial-footer.php';
