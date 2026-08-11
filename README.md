@@ -7,6 +7,14 @@ A lightweight quote request plugin for WooCommerce.
 **PHP:** 7.4+  
 **WooCommerce:** 7.0+
 
+## Download
+
+Download the latest public release of Musomo Quote from GitHub Releases:
+
+[Download Musomo Quote](https://github.com/musomo-design/musomo-quote/releases)
+
+The downloadable plugin ZIP is available under **Assets** in the latest release.
+
 ## Introduction
 Musomo Quote adds a customizable quote request workflow to WooCommerce products using Contact Form 7. It lets you show a quote button on eligible products, open a product-aware modal, and pass product details into a Contact Form 7 form without replacing Contact Form 7 as the submission engine.
 
