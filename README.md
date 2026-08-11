@@ -3,8 +3,8 @@
 A lightweight quote request plugin for WooCommerce.
 
 **Version:** 2.0.0-rc1  
-**WordPress:** 6.4+  
-**PHP:** 8.0+  
+**WordPress:** 6.0+  
+**PHP:** 7.4+  
 **WooCommerce:** 7.0+
 
 ## Introduction

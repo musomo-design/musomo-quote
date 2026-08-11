@@ -4,8 +4,8 @@
  * Plugin URI:        https://musomo.net
  * Description:       Request a quote button and modal for WooCommerce, powered by Contact Form 7.
  * Version:           2.0.0-rc1
- * Requires at least: 6.4
- * Requires PHP:      8.0
+ * Requires at least: 6.0
+ * Requires PHP:      7.4
  * Author:            Musomo
  * Author URI:        https://musomo.net
  * Text Domain:       musomo-quote
