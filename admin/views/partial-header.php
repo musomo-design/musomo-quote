@@ -26,10 +26,10 @@ $current    = isset( $_GET['page'] ) ? sanitize_key( wp_unslash( $_GET['page'] )
 		</div>
 		<div class="mq-admin-header__meta">
 			<span class="mq-admin-badge"><?php echo esc_html( 'v' . MUSOMO_QUOTE_VERSION ); ?></span>
-			<a class="mq-admin-btn mq-admin-btn--ghost" href="https://musomo.com" target="_blank" rel="noopener noreferrer">
+			<a class="mq-admin-btn mq-admin-btn--ghost" href="https://github.com/musomo-design/musomo-quote#readme" target="_blank" rel="noopener noreferrer">
 				<?php echo esc_html__( 'Documentation', 'musomo-quote' ); ?>
 			</a>
-			<a class="mq-admin-btn mq-admin-btn--ghost" href="https://musomo.com" target="_blank" rel="noopener noreferrer">
+			<a class="mq-admin-btn mq-admin-btn--ghost" href="https://github.com/musomo-design/musomo-quote/issues" target="_blank" rel="noopener noreferrer">
 				<?php echo esc_html__( 'Support', 'musomo-quote' ); ?>
 			</a>
 		</div>
