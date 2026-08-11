@@ -1,0 +1,499 @@
+/**
+ * Musomo Quote — Frontend styles (STEP 4 Appearance).
+ * All rules namespaced under .musomo-quote-*
+ */
+
+:root,
+.musomo-quote-action,
+.musomo-quote-modal {
+	--mq-btn-bg: #014b43;
+	--mq-btn-color: #ffffff;
+	--mq-btn-border: #014b43;
+	--mq-btn-hover-bg: #013730;
+	--mq-btn-hover-color: #ffffff;
+	--mq-btn-radius: 4px;
+	--mq-btn-height: 48px;
+	--mq-btn-padding-x: 20px;
+	--mq-btn-font-size: 16px;
+	--mq-btn-font-weight: 600;
+	--mq-btn-width: auto;
+	--mq-modal-width: 900px;
+	--mq-modal-radius: 12px;
+	--mq-modal-bg: #ffffff;
+	--mq-modal-text: #1a1a1a;
+	--mq-modal-padding: 20px;
+	--mq-overlay-bg: rgba(0, 0, 0, 0.5);
+	--mq-close-size: 40px;
+	--mq-close-color: #1a1a1a;
+	--mq-close-bg: transparent;
+	--mq-close-radius: 8px;
+	--mq-summary-image: 96px;
+	--mq-field-height: 44px;
+	--mq-field-radius: 4px;
+	--mq-field-border: #e5e7eb;
+	--mq-field-focus: #014b43;
+	--mq-submit-bg: #014b43;
+	--mq-submit-color: #ffffff;
+	--mq-submit-radius: 4px;
+	--mq-muted: #5f6368;
+}
+
+/* Hide native ATC when REPLACE keeps the variations/grouped form. */
+body.musomo-quote-replace-atc form.cart .single_add_to_cart_button {
+	display: none !important;
+}
+
+/* -------------------------------------------------------------------------
+   Quote button
+   ------------------------------------------------------------------------- */
+
+.musomo-quote-action {
+	display: block;
+	margin: 0.75em 0;
+}
+
+.musomo-quote-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: var(--mq-btn-width, auto);
+	min-height: var(--mq-btn-height, 48px);
+	height: auto;
+	padding: 0 var(--mq-btn-padding-x, 20px);
+	background: var(--mq-btn-bg, #014b43);
+	color: var(--mq-btn-color, #ffffff);
+	border: 1px solid var(--mq-btn-border, transparent);
+	border-radius: var(--mq-btn-radius, 4px);
+	font-size: var(--mq-btn-font-size, 16px);
+	font-weight: var(--mq-btn-font-weight, 600);
+	line-height: 1.25;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.musomo-quote-button:hover {
+	background: var(--mq-btn-hover-bg, #013730);
+	color: var(--mq-btn-hover-color, #ffffff);
+}
+
+.musomo-quote-button:focus {
+	outline: none;
+}
+
+.musomo-quote-button:focus-visible {
+	outline: 2px solid var(--mq-field-focus, #014b43);
+	outline-offset: 2px;
+}
+
+/*
+ * Theme inherit: keep soft rules so WooCommerce/theme button styles can influence.
+ */
+.musomo-quote-root--theme .musomo-quote-button {
+	background: transparent;
+	color: inherit;
+	border-color: currentColor;
+}
+
+.musomo-quote-root--theme .musomo-quote-button:hover,
+.musomo-quote-root--theme .musomo-quote-button:active {
+	background: rgba(0, 0, 0, 0.06);
+	color: inherit;
+}
+
+/*
+ * Custom + Musomo: scoped high-specificity rules so theme button styles
+ * (e.g. .single-product .button) do not override Musomo Quote controls.
+ * !important only on properties explicitly owned by Appearance settings.
+ */
+.musomo-quote-root--custom .musomo-quote-button,
+.musomo-quote-root--musomo .musomo-quote-button {
+	width: var(--mq-btn-width, auto) !important;
+	min-height: var(--mq-btn-height, 48px) !important;
+	height: auto !important;
+	padding: 0 var(--mq-btn-padding-x, 20px) !important;
+	background: var(--mq-btn-bg, #014b43) !important;
+	background-image: none !important;
+	color: var(--mq-btn-color, #ffffff) !important;
+	border-width: 1px !important;
+	border-style: solid !important;
+	border-color: var(--mq-btn-border, transparent) !important;
+	border-radius: var(--mq-btn-radius, 4px) !important;
+	font-size: var(--mq-btn-font-size, 16px) !important;
+	font-weight: var(--mq-btn-font-weight, 600) !important;
+	text-decoration: none !important;
+	box-shadow: none !important;
+}
+
+.musomo-quote-root--custom .musomo-quote-button:hover,
+.musomo-quote-root--custom .musomo-quote-button:active,
+.musomo-quote-root--musomo .musomo-quote-button:hover,
+.musomo-quote-root--musomo .musomo-quote-button:active {
+	background: var(--mq-btn-hover-bg, #013730) !important;
+	background-image: none !important;
+	color: var(--mq-btn-hover-color, #ffffff) !important;
+	border-color: var(--mq-btn-border, transparent) !important;
+}
+
+.musomo-quote-root--custom .musomo-quote-button:focus-visible,
+.musomo-quote-root--musomo .musomo-quote-button:focus-visible {
+	outline: 2px solid var(--mq-field-focus, #014b43) !important;
+	outline-offset: 2px !important;
+}
+
+/* -------------------------------------------------------------------------
+   Body scroll lock
+   ------------------------------------------------------------------------- */
+
+body.musomo-quote-modal-open {
+	overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------
+   Modal shell
+   ------------------------------------------------------------------------- */
+
+.musomo-quote-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.musomo-quote-modal.is-open,
+.musomo-quote-modal:not([hidden]) {
+	display: flex;
+}
+
+.musomo-quote-modal[hidden] {
+	display: none !important;
+}
+
+.musomo-quote-overlay {
+	position: absolute;
+	inset: 0;
+	background: var(--mq-overlay-bg, rgba(0, 0, 0, 0.5));
+	cursor: pointer;
+}
+
+.musomo-quote-dialog {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	width: min(var(--mq-modal-width, 900px), calc(100vw - 32px));
+	max-width: 100%;
+	max-height: 90vh;
+	max-height: 90dvh;
+	overflow: hidden;
+	background: var(--mq-modal-bg, #ffffff);
+	color: var(--mq-modal-text, #1a1a1a);
+	border: 1px solid var(--mq-field-border, #e5e7eb);
+	border-radius: var(--mq-modal-radius, 12px);
+	box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+	box-sizing: border-box;
+}
+
+.musomo-quote-dialog__header {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	flex-shrink: 0;
+	padding: 14px var(--mq-modal-padding, 20px);
+	background: var(--mq-modal-bg, #ffffff);
+	border-bottom: 1px solid var(--mq-field-border, #e5e7eb);
+}
+
+.musomo-quote-dialog__title {
+	margin: 0;
+	font-size: 1.15rem;
+	line-height: 1.3;
+	color: inherit;
+}
+
+.musomo-quote-close {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: var(--mq-close-size, 40px);
+	height: var(--mq-close-size, 40px);
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: var(--mq-close-radius, 8px);
+	background: var(--mq-close-bg, transparent);
+	color: var(--mq-close-color, #1a1a1a);
+	line-height: 1;
+	cursor: pointer;
+}
+
+.musomo-quote-close__icon {
+	display: block;
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+	pointer-events: none;
+}
+
+.musomo-quote-close__icon path {
+	stroke: currentColor;
+	stroke-width: 2.25;
+	stroke-linecap: round;
+}
+
+.musomo-quote-close:hover {
+	background: rgba(0, 0, 0, 0.06);
+}
+
+.musomo-quote-close:focus {
+	outline: none;
+}
+
+.musomo-quote-close:focus-visible {
+	outline: 2px solid var(--mq-field-focus, #014b43);
+	outline-offset: 2px;
+}
+
+.musomo-quote-dialog__body {
+	padding: var(--mq-modal-padding, 20px);
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* -------------------------------------------------------------------------
+   Product summary
+   ------------------------------------------------------------------------- */
+
+.musomo-quote-product-summary {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	margin-bottom: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid var(--mq-field-border, #e5e7eb);
+}
+
+.musomo-quote-summary--horizontal .musomo-quote-product-summary {
+	flex-direction: row;
+}
+
+.musomo-quote-summary--vertical .musomo-quote-product-summary,
+.musomo-quote-summary--compact .musomo-quote-product-summary {
+	flex-direction: column;
+	align-items: stretch;
+	gap: 10px;
+}
+
+.musomo-quote-summary--compact .musomo-quote-product-summary {
+	gap: 8px;
+	margin-bottom: 14px;
+	padding-bottom: 12px;
+}
+
+.musomo-quote-product-summary__image {
+	display: block;
+	width: var(--mq-summary-image, 96px);
+	max-width: 40%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 8px;
+	border: 1px solid var(--mq-field-border, #e5e7eb);
+	background: #f6f7f8;
+	flex-shrink: 0;
+}
+
+.musomo-quote-product-summary__image[hidden],
+.musomo-quote-hide-image .musomo-quote-product-summary__image {
+	display: none !important;
+}
+
+.musomo-quote-product-summary__meta {
+	min-width: 0;
+	flex: 1;
+}
+
+.musomo-quote-product-summary__name {
+	margin: 0 0 6px;
+	font-size: 1.05rem;
+	line-height: 1.35;
+	word-break: break-word;
+	color: inherit;
+}
+
+.musomo-quote-product-summary__sku,
+.musomo-quote-product-summary__price {
+	margin: 0 0 4px;
+	color: var(--mq-muted, #5f6368);
+	font-size: 0.925rem;
+}
+
+.musomo-quote-product-summary__sku[hidden],
+.musomo-quote-product-summary__price[hidden],
+.musomo-quote-hide-sku .musomo-quote-product-summary__sku,
+.musomo-quote-hide-price .musomo-quote-product-summary__price {
+	display: none !important;
+}
+
+/* -------------------------------------------------------------------------
+   CF7 form container (scoped)
+   ------------------------------------------------------------------------- */
+
+.musomo-quote-form {
+	width: 100%;
+}
+
+.musomo-quote-form-missing {
+	margin: 0;
+	padding: 12px 14px;
+	border-radius: 8px;
+	background: #f6f7f8;
+	color: var(--mq-muted, #5f6368);
+}
+
+.musomo-quote-form .wpcf7 {
+	margin: 0;
+}
+
+.musomo-quote-form .wpcf7-form > p {
+	margin: 0 0 12px;
+}
+
+.musomo-quote-form input[type="text"],
+.musomo-quote-form input[type="email"],
+.musomo-quote-form input[type="tel"],
+.musomo-quote-form input[type="url"],
+.musomo-quote-form input[type="number"],
+.musomo-quote-form input[type="date"],
+.musomo-quote-form select,
+.musomo-quote-form textarea {
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	min-height: var(--mq-field-height, 44px);
+	padding: 10px 12px;
+	border: 1px solid var(--mq-field-border, #e5e7eb);
+	border-radius: var(--mq-field-radius, 4px);
+	background: #fff;
+	color: var(--mq-modal-text, #1a1a1a);
+	font: inherit;
+}
+
+.musomo-quote-form textarea {
+	min-height: 110px;
+	resize: vertical;
+}
+
+.musomo-quote-form input[type="text"]:focus,
+.musomo-quote-form input[type="email"]:focus,
+.musomo-quote-form input[type="tel"]:focus,
+.musomo-quote-form input[type="url"]:focus,
+.musomo-quote-form input[type="number"]:focus,
+.musomo-quote-form input[type="date"]:focus,
+.musomo-quote-form select:focus,
+.musomo-quote-form textarea:focus {
+	outline: 2px solid var(--mq-field-focus, #014b43);
+	outline-offset: 1px;
+	border-color: var(--mq-field-focus, #014b43);
+}
+
+.musomo-quote-form input[type="submit"],
+.musomo-quote-form button[type="submit"],
+.musomo-quote-form .wpcf7-submit {
+	display: inline-block;
+	margin-top: 4px;
+	padding: 12px 18px;
+	min-height: var(--mq-field-height, 44px);
+	border: 0;
+	border-radius: var(--mq-submit-radius, 4px);
+	background: var(--mq-submit-bg, #014b43);
+	color: var(--mq-submit-color, #ffffff);
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.musomo-quote-form input[type="submit"]:hover,
+.musomo-quote-form button[type="submit"]:hover,
+.musomo-quote-form .wpcf7-submit:hover {
+	filter: brightness(0.95);
+}
+
+.musomo-quote-form input[type="submit"]:focus,
+.musomo-quote-form button[type="submit"]:focus,
+.musomo-quote-form .wpcf7-submit:focus {
+	outline: none;
+}
+
+.musomo-quote-form input[type="submit"]:focus-visible,
+.musomo-quote-form button[type="submit"]:focus-visible,
+.musomo-quote-form .wpcf7-submit:focus-visible {
+	outline: 2px solid var(--mq-field-focus, #014b43);
+	outline-offset: 2px;
+}
+
+.musomo-quote-form .wpcf7-not-valid-tip,
+.musomo-quote-form .wpcf7-response-output {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+.musomo-quote-modal.musomo-quote-success .musomo-quote-form .wpcf7-response-output {
+	border-color: #46b450;
+}
+
+/* -------------------------------------------------------------------------
+   Honeypot (off-screen — avoid display:none alone)
+   ------------------------------------------------------------------------- */
+
+.musomo-quote-honeypot {
+	position: absolute !important;
+	left: -9999px !important;
+	top: auto !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
+
+/* -------------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+	.musomo-quote-modal {
+		padding: 8px;
+		align-items: stretch;
+	}
+
+	.musomo-quote-dialog {
+		width: calc(100vw - 16px);
+		max-width: none;
+		max-height: calc(100vh - 16px);
+		max-height: calc(100dvh - 16px);
+		margin: auto;
+		border-radius: min(var(--mq-modal-radius, 12px), 10px);
+	}
+
+	.musomo-quote-product-summary {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 12px;
+	}
+
+	.musomo-quote-product-summary__image {
+		max-width: 72px;
+	}
+}

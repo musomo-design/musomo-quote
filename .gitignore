@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local / packaging junk
+*.zip
+*.log
+node_modules/
+vendor/
+
+# Env / secrets (none expected; keep ignored)
+.env
+.env.*
