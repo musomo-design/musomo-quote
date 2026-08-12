@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-d8ddfd4c-5fca-4b4f-b95a-633a49158883" data-name="woocommerce" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <path d="M15.29,14.87h44.21l-6.98,26.4h-30.91l-6.32-26.4-1.64-6.83c-.31-1.29-1.46-2.19-2.78-2.19h-6.37" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <g>
+    <circle cx="24.99" cy="53.97" r="4.17" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <circle cx="50.64" cy="53.97" r="4.17" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

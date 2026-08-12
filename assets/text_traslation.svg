@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-220317c5-eb2a-454a-9978-dc73c207e635" data-name="text_traslation" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g>
+    <polyline points="35.36 57.76 48.43 29.67 60.71 57.5" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line x1="57.21" y1="49.58" x2="39.17" y2="49.58" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+  <g>
+    <line x1="5.71" y1="16.17" x2="37.64" y2="16.17" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <line x1="21.81" y1="16.17" x2="21.81" y2="8.41" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <g>
+    <line x1="9.44" y1="22.44" x2="32.19" y2="46.42" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <line x1="32.19" y1="22.44" x2="9.44" y2="46.42" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

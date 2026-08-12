@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-0eb39e7b-5e43-4be7-8146-2fe70e8d4176" data-name="quote_products" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <polygon points="32 61.25 4.5 45.37 4.5 16.48 32 32.36 32 61.25" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <polygon points="32 61.25 59.5 45.37 59.5 16.48 32 32.36 32 61.25" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <polyline points="4.5 16.48 32 2.75 59.5 16.48" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

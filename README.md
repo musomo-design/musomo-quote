@@ -2,14 +2,14 @@
 
 A lightweight quote request plugin for WooCommerce.
 
-**Version:** 2.0.0-rc1  
+**Version:** 2.0.0  
 **WordPress:** 6.0+  
 **PHP:** 7.4+  
 **WooCommerce:** 7.0+
 
 ## Download
 
-**[Download Musomo Quote 2.0.0-rc1](https://github.com/musomo-design/musomo-quote/releases/download/v2.0.0-rc1/musomo-quote-2.0.0-rc1.zip)**
+**[Download Musomo Quote 2.0.0](https://github.com/musomo-design/musomo-quote/releases/download/v2.0.0/musomo-quote-2.0.0.zip)**
 
 Ready-to-install WordPress plugin ZIP.
 

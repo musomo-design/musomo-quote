@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-ee25bdd6-353a-4b2f-9c03-c6c4a22c53fd" data-name="configure_quote_form" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g>
+    <path d="M37.43,10.68h10.88c2.25,0,4.07,1.82,4.07,4.07v40.67c0,2.26-1.82,4.08-4.07,4.08H15.69c-2.26,0-4.08-1.82-4.08-4.08V14.75c0-2.25,1.82-4.07,4.08-4.07h10.88" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M22.29,10.68v2.94c0,1.88,1.52,3.4,3.4,3.4h12.62c1.88,0,3.4-1.52,3.4-3.4v-2.94" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path d="M26.58,10.68c.62-3.56,2.82-6.18,5.43-6.18s4.8,2.62,5.43,6.18" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+  <g>
+    <line x1="43.97" y1="27.49" x2="21.22" y2="27.49" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line x1="43.97" y1="37.96" x2="21.22" y2="37.96" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line x1="34.13" y1="47.32" x2="21.22" y2="47.32" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

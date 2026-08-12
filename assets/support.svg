@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-c33601c4-d4d4-4a08-9786-95fd08399af4" data-name="support" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <path d="M31.77,57.05c-8.11,1.34-18.79-1.32-18.79-8.99v-23.48c0-9.93,8.05-17.97,17.97-17.97h2.09c9.93,0,17.97,8.41,17.97,18.34" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M10.85,24.95h2.14v21.94h-2.14c-3.5,0-6.35-2.84-6.35-6.35v-9.25c0-3.5,2.84-6.35,6.35-6.35Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M57.36,24.95h2.14v21.94h-2.14c-3.5,0-6.35-2.84-6.35-6.35v-9.25c0-3.5,2.84-6.35,6.35-6.35Z" transform="translate(110.52 71.85) rotate(-180)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

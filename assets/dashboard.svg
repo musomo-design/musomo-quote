@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-bd57c42c-ac0b-4efd-b01e-5ff49df5839f" data-name="dashboard" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g>
+    <rect x="4.5" y="4.5" width="21.48" height="21.46" rx="2.27" ry="2.27" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <rect x="38.02" y="4.5" width="21.48" height="21.46" rx="2.27" ry="2.27" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <g>
+    <rect x="4.5" y="38.04" width="21.48" height="21.46" rx="2.27" ry="2.27" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <rect x="38.02" y="38.04" width="21.48" height="21.46" rx="2.27" ry="2.27" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

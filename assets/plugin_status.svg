@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-76ffa7a3-8aae-4d25-84ff-7dd023aa552b" data-name="plugin_status" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <path d="M36.99,15.97c.76-1.16,1.18-2.54,1.18-4.02,0-4.11-3.32-7.45-7.45-7.45s-7.45,3.34-7.45,7.45c0,1.48.42,2.86,1.18,4.02" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M50.39,42.95c.63.18,1.3.27,1.99.27,4.11,0,7.45-3.34,7.45-7.45s-3.34-7.45-7.45-7.45c-.7,0-1.36.09-1.99.27" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M35.3,59.5c1.24-1.33,1.98-3.1,1.98-5.05,0-4.13-3.34-7.45-7.45-7.45s-7.45,3.32-7.45,7.45c0,1.95.74,3.72,1.98,5.05" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M8.16,41.16c1.33,1.28,3.14,2.07,5.14,2.07,4.11,0,7.45-3.34,7.45-7.45s-3.34-7.45-7.45-7.45c-1.99,0-3.81.79-5.14,2.07" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <polyline points="36.99 15.97 50.39 15.97 50.39 28.6" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <polyline points="8.16 41.16 8.16 59.5 24.36 59.5" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <polyline points="50.39 42.95 50.39 59.5 35.3 59.5" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  <polyline points="8.16 30.4 8.16 15.97 24.45 15.97" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>
