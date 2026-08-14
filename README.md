@@ -1,5 +1,7 @@
 # Musomo Quote
 
+![Musomo Quote - Quote requests for WooCommerce, made simple](.github/assets/musomo-quote-banner.jpg)
+
 A lightweight quote request plugin for WooCommerce.
 
 **Version:** 2.0.0  
