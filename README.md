@@ -22,6 +22,28 @@ Musomo Quote adds a customizable quote request workflow to WooCommerce products 
 
 The plugin is designed for WooCommerce site owners, freelancers, agencies, and small businesses that want a lightweight quote workflow without adding a custom customer submissions database.
 
+## Screenshots
+
+### WooCommerce product page
+Display the quote action alongside the standard WooCommerce purchase flow.
+
+![Musomo Quote button on a WooCommerce product page](.github/assets/screenshots/product-page.png)
+
+### Product-aware quote request
+Open a customizable quote form containing the selected product details.
+
+![Musomo Quote product-aware request modal](.github/assets/screenshots/quote-request-modal.png)
+
+### Plugin dashboard
+Review the setup progress and integration status from one dashboard.
+
+![Musomo Quote WordPress dashboard](.github/assets/screenshots/plugin-dashboard.png)
+
+### Contact Form 7 email template builder
+Build a product-aware HTML email template and preview it before copying it to Contact Form 7.
+
+![Musomo Quote Contact Form 7 email template builder](.github/assets/screenshots/email-template-builder.png)
+
 ## Key Features
 - `ADD`, `REPLACE`, and `SELECTED` quote modes
 - Per-product Musomo Quote toggle for selected products
