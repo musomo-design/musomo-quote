@@ -481,8 +481,8 @@ function musomo_quote_get_cf7_status_label() {
 	) {
 		$overrides = Musomo_Quote_I18n::count_cf7_translation_overrides();
 		if ( $overrides > 0 ) {
-			/* translators: 1: global form label, 2: number of language CF7 overrides */
 			$label = sprintf(
+				/* translators: 1: current linked CF7 form status label, 2: number of language-specific CF7 form overrides */
 				__( '%1$s — 1 global + %2$d translations', 'musomo-quote' ),
 				$label,
 				$overrides

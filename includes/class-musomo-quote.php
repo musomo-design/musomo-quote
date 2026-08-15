@@ -55,7 +55,6 @@ final class Musomo_Quote {
 	private function init_hooks() {
 		register_activation_hook( MUSOMO_QUOTE_FILE, array( $this, 'activate' ) );
 		add_action( 'before_woocommerce_init', array( $this, 'declare_woocommerce_feature_compatibility' ) );
-		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		add_action( 'plugins_loaded', array( $this, 'init' ), 20 );
 	}
 
@@ -94,18 +93,10 @@ final class Musomo_Quote {
 	}
 
 	/**
-	 * Load translations.
-	 */
-	public function load_textdomain() {
-		load_plugin_textdomain(
-			'musomo-quote',
-			false,
-			dirname( MUSOMO_QUOTE_BASENAME ) . '/languages'
-		);
-	}
-
-	/**
 	 * Initialize plugin components.
+	 *
+	 * Translations for the musomo-quote text domain are loaded automatically by
+	 * WordPress.org for distributed plugins; no local load_plugin_textdomain() call.
 	 */
 	public function init() {
 		if ( is_admin() ) {

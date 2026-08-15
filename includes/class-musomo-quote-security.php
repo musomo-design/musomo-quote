@@ -419,8 +419,10 @@ class Musomo_Quote_Security {
 	 * @return string
 	 */
 	private function get_client_ip() {
-		$ip = isset( $_SERVER['REMOTE_ADDR'] ) ? (string) wp_unslash( $_SERVER['REMOTE_ADDR'] ) : '';
-		$ip = sanitize_text_field( $ip );
+		$ip = '';
+		if ( isset( $_SERVER['REMOTE_ADDR'] ) ) {
+			$ip = sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) );
+		}
 		return $ip ? $ip : 'unknown';
 	}
 

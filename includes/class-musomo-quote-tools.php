@@ -84,15 +84,25 @@ class Musomo_Quote_Tools {
 	}
 
 	/**
+	 * Abort unless the current user can manage tools.
+	 */
+	private function assert_manage_options() {
+		if ( ! current_user_can( self::capability() ) ) {
+			wp_die( esc_html__( 'You do not have permission for this operation.', 'musomo-quote' ), 403 );
+		}
+	}
+
+	/**
 	 * Verify capability + nonce.
+	 *
+	 * Prefer calling check_admin_referer() in the same handler that reads
+	 * request input so PHPCS can see the verification.
 	 *
 	 * @param string $action Nonce action.
 	 * @param string $field  Nonce field name.
 	 */
 	private function verify_request( $action, $field = '_wpnonce' ) {
-		if ( ! current_user_can( self::capability() ) ) {
-			wp_die( esc_html__( 'You do not have permission for this operation.', 'musomo-quote' ), 403 );
-		}
+		$this->assert_manage_options();
 		check_admin_referer( $action, $field );
 	}
 
@@ -732,10 +742,11 @@ class Musomo_Quote_Tools {
 	 * Handle import preview (step 1).
 	 */
 	public function handle_import_preview() {
-		$this->verify_request( 'musomo_quote_import_preview' );
+		$this->assert_manage_options();
+		check_admin_referer( 'musomo_quote_import_preview' );
 
-		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- validated in parse_import_file.
-		$file = isset( $_FILES['mq_import_file'] ) ? $_FILES['mq_import_file'] : null;
+		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- upload array validated in parse_import_file().
+		$file   = isset( $_FILES['mq_import_file'] ) ? $_FILES['mq_import_file'] : null;
 		$parsed = self::parse_import_file( $file );
 
 		if ( empty( $parsed['ok'] ) ) {
@@ -770,7 +781,8 @@ class Musomo_Quote_Tools {
 	 * Confirm import (step 2) — merge sanitized onto current.
 	 */
 	public function handle_import_confirm() {
-		$this->verify_request( 'musomo_quote_import_confirm' );
+		$this->assert_manage_options();
+		check_admin_referer( 'musomo_quote_import_confirm' );
 
 		$token = isset( $_POST['mq_import_token'] ) ? sanitize_text_field( wp_unslash( $_POST['mq_import_token'] ) ) : '';
 		$data  = get_transient( $this->preview_transient_key() );
@@ -806,7 +818,8 @@ class Musomo_Quote_Tools {
 	 * Full settings reset to current defaults.
 	 */
 	public function handle_reset() {
-		$this->verify_request( 'musomo_quote_reset_settings' );
+		$this->assert_manage_options();
+		check_admin_referer( 'musomo_quote_reset_settings' );
 
 		$confirm = isset( $_POST['mq_reset_confirm'] ) ? sanitize_text_field( wp_unslash( $_POST['mq_reset_confirm'] ) ) : '';
 		if ( 'RESET' !== $confirm ) {
@@ -855,8 +868,11 @@ class Musomo_Quote_Tools {
 			return;
 		}
 
-		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
-		$msg = isset( $_GET['mq_msg'] ) ? sanitize_text_field( rawurldecode( wp_unslash( $_GET['mq_msg'] ) ) ) : '';
+		// Read-only notice text after admin_post redirect; capability checked above.
+		// Decode URL-encoded redirect payload first; sanitize immediately on the next line.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+		$mq_msg_raw = isset( $_GET['mq_msg'] ) ? rawurldecode( wp_unslash( $_GET['mq_msg'] ) ) : '';
+		$msg        = sanitize_text_field( $mq_msg_raw );
 
 		$map = array(
 			'import_ok'              => array( 'success', __( 'Configuration imported successfully.', 'musomo-quote' ) ),

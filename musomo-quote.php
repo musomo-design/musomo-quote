@@ -10,6 +10,8 @@
  * Author URI:        https://musomo.net
  * Text Domain:       musomo-quote
  * Domain Path:       /languages
+ * License:           GPLv2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * WC requires at least: 7.0
  * WC tested up to:   9.0
  *
