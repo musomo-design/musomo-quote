@@ -155,6 +155,7 @@ Musomo Quote includes a small set of maintenance tools:
 
 ## Support
 - Bug reports and issues: [GitHub Issues](https://github.com/musomo-design/musomo-quote/issues)
+- Plugin website: [Musomo Quote – WooCommerce Quote Request Plugin](https://musomo.net/musomo-quote-woocommerce-plugin/)
 - Musomo Design website: [https://musomo.net](https://musomo.net)
 
 ## Support the development
