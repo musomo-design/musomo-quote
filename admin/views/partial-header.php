@@ -9,6 +9,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template variables are defined in the including method scope.
+
 $page_title = isset( $page_title ) ? $page_title : __( 'Dashboard', 'musomo-quote' );
 $logo_url   = add_query_arg( 'ver', MUSOMO_QUOTE_VERSION, MUSOMO_QUOTE_URL . 'assets/08-logo.svg' );
 $current    = isset( $_GET['page'] ) ? sanitize_key( wp_unslash( $_GET['page'] ) ) : 'musomo-quote'; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
@@ -61,3 +63,6 @@ $current    = isset( $_GET['page'] ) ? sanitize_key( wp_unslash( $_GET['page'] )
 
 	<div class="mq-admin-content">
 		<h2 class="mq-admin-content__title screen-reader-text"><?php echo esc_html( $page_title ); ?></h2>
+
+<?php
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound

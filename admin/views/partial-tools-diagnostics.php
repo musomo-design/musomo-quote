@@ -7,6 +7,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template variables are defined in the including method scope.
+
 $env     = Musomo_Quote_Tools::get_environment_info();
 $cfg     = Musomo_Quote_Tools::get_configuration_status();
 $checks  = Musomo_Quote_Tools::get_system_checks();
@@ -263,3 +265,6 @@ $on_off = static function ( $on ) {
 	</div>
 
 </div>
+
+<?php
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound

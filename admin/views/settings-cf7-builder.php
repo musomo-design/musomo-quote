@@ -7,6 +7,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template variables are defined in the including method scope.
+
 $config     = Musomo_Quote_CF7_Builder::get_config();
 $defs       = Musomo_Quote_CF7_Builder::field_definitions();
 $form_code  = Musomo_Quote_CF7_Builder::generate_form_code( $config );
@@ -336,3 +338,6 @@ $turnstile_label = class_exists( 'Musomo_Quote_Security' ) ? Musomo_Quote_Securi
 		</p>
 	</form>
 </div>
+
+<?php
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound

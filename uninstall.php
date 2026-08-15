@@ -7,9 +7,9 @@
 
 defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
 
-$settings = get_option( 'musomo_quote_settings', array() );
+$musomo_quote_settings = get_option( 'musomo_quote_settings', array() );
 
-if ( empty( $settings['delete_data_on_uninstall'] ) ) {
+if ( empty( $musomo_quote_settings['delete_data_on_uninstall'] ) ) {
 	return;
 }
 

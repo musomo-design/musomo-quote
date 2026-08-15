@@ -11,6 +11,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template variables are defined in the including method scope.
+
 $modal_title = isset( $modal_title ) ? $modal_title : musomo_quote_get_text( 'modal_title' );
 $cf7_active  = isset( $cf7_active ) ? (bool) $cf7_active : musomo_quote_is_cf7_active();
 $form_id     = isset( $form_id ) ? absint( $form_id ) : 0;
@@ -83,3 +85,6 @@ $close_label = musomo_quote_get_text( 'close_aria_label' );
 		</div>
 	</div>
 </div>
+
+<?php
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound

@@ -403,7 +403,9 @@ function musomo_quote_count_selected_products() {
 			'no_found_rows'          => false,
 			'update_post_meta_cache' => false,
 			'update_post_term_cache' => false,
+			// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Intentional WooCommerce product meta lookup; limited to posts_per_page=1 and found_posts count for SELECTED mode.
 			'meta_key'               => '_musomo_quote_enabled',
+			// phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value -- Intentional WooCommerce product meta lookup; limited to posts_per_page=1 and found_posts count for SELECTED mode.
 			'meta_value'             => 'yes',
 		)
 	);

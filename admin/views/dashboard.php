@@ -9,6 +9,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- Template variables are defined in the including method scope.
+
 $page_title = __( 'Dashboard', 'musomo-quote' );
 include MUSOMO_QUOTE_PATH . 'admin/views/partial-header.php';
 
@@ -247,3 +249,5 @@ $antispam_class   = ( 'active' === $antispam_key ) ? 'mq-status--ok' : ( ( 'part
 
 <?php
 include MUSOMO_QUOTE_PATH . 'admin/views/partial-footer.php';
+
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
