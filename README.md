@@ -66,8 +66,8 @@ Build a product-aware HTML email template and preview it before copying it to Co
 - No proprietary AJAX submission endpoint for quote form sending
 
 ## Requirements
-- WordPress 6.4+
-- PHP 8.0+
+- WordPress 6.0+
+- PHP 7.4+
 - WooCommerce 7.0+
 - Contact Form 7 for quote form submissions
 - Polylang is optional
