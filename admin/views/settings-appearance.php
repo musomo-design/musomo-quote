@@ -255,7 +255,7 @@ $mq_color_field = static function ( $name, $value, $allow_transparent = false ) 
 				<h3 class="mq-card__title"><?php echo esc_html__( 'Form', 'musomo-quote' ); ?></h3>
 				<table class="form-table" role="presentation">
 					<tr>
-						<th scope="row"><label for="mq-field-field_height"><?php echo esc_html__( 'Height campi', 'musomo-quote' ); ?></label></th>
+						<th scope="row"><label for="mq-field-field_height"><?php echo esc_html__( 'Field height', 'musomo-quote' ); ?></label></th>
 						<td>
 							<select id="mq-field-field_height" name="musomo_quote_settings[field_height]" data-mq-appearance="field_height">
 								<?php foreach ( array( 40, 44, 48, 52 ) as $h ) : ?>

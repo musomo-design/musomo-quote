@@ -13,7 +13,11 @@
 	var fields = data.fields || {};
 	var productHidden = data.productHidden || [];
 	var demo = data.demo || {};
-	var defaultSubmit = data.defaultSubmit || 'Send request';
+	var i18n = data.i18n || {};
+	var defaultSubmit = data.defaultSubmit || i18n.sendRequest || 'Send request';
+	var defaultHeader = i18n.quoteRequest || 'Quote request';
+	var defaultSubject = i18n.subject || 'New quote request — [musomo_product_name]';
+	var defaultWebsite = i18n.website || 'Website';
 
 	function esc(str) {
 		return String(str == null ? '' : str)
@@ -80,10 +84,10 @@
 		});
 
 		if (!config.email.header_title) {
-			config.email.header_title = 'Quote request';
+			config.email.header_title = defaultHeader;
 		}
 		if (!config.email.subject) {
-			config.email.subject = 'New quote request — [musomo_product_name]';
+			config.email.subject = defaultSubject;
 		}
 
 		return config;
@@ -139,11 +143,11 @@
 
 	function companyName(config) {
 		var name = (config.email.company_name || '').trim();
-		return name || data.siteName || 'Website';
+		return name || data.siteName || defaultWebsite;
 	}
 
 	function generateSubject(config) {
-		return config.email.subject || 'New quote request — [musomo_product_name]';
+		return config.email.subject || defaultSubject;
 	}
 
 	function generateReplyTo(config) {
@@ -157,7 +161,7 @@
 		var email = config.email;
 		var f = config.fields;
 		var company = esc(companyName(config));
-		var title = esc(email.header_title || 'Quote request');
+		var title = esc(email.header_title || defaultHeader);
 
 		var productRows = '';
 		if (email.show_product_image) {
@@ -173,13 +177,13 @@
 
 		var meta = [];
 		if (email.show_sku) {
-			meta.push('SKU: [musomo_product_sku]');
+			meta.push((i18n.sku || 'SKU:') + ' [musomo_product_sku]');
 		}
 		if (email.show_price) {
-			meta.push('Price: [musomo_product_price]');
+			meta.push((i18n.price || 'Price:') + ' [musomo_product_price]');
 		}
 		if (email.show_quantity) {
-			meta.push('Quantity: [musomo_quantity]');
+			meta.push((i18n.quantity || 'Quantity:') + ' [musomo_quantity]');
 		}
 		if (meta.length) {
 			productRows +=
@@ -191,19 +195,19 @@
 		var customerRows = '';
 		var customerLines = [];
 		if (email.show_customer_name && f.name && f.name.enabled) {
-			customerLines.push(['Name', '[your-name]']);
+			customerLines.push([i18n.name || 'Name', '[your-name]']);
 		}
 		if (email.show_customer_lastname && f.lastname && f.lastname.enabled) {
-			customerLines.push(['Last name', '[your-lastname]']);
+			customerLines.push([i18n.lastName || 'Last name', '[your-lastname]']);
 		}
 		if (email.show_company && f.company && f.company.enabled) {
-			customerLines.push(['Company', '[your-company]']);
+			customerLines.push([i18n.company || 'Company', '[your-company]']);
 		}
 		if (email.show_email && f.email && f.email.enabled) {
-			customerLines.push(['Email', '[your-email]']);
+			customerLines.push([i18n.email || 'Email', '[your-email]']);
 		}
 		if (email.show_phone && f.phone && f.phone.enabled) {
-			customerLines.push(['Phone', '[your-phone]']);
+			customerLines.push([i18n.phone || 'Phone', '[your-phone]']);
 		}
 		customerLines.forEach(function (line) {
 			customerRows +=
@@ -219,7 +223,9 @@
 		if (email.show_message && f.message && f.message.enabled) {
 			messageBlock =
 				'<tr><td style="padding:20px 24px;border-top:1px solid #e5e5e5;">' +
-				'<p style="margin:0 0 8px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888;">Message</p>' +
+				'<p style="margin:0 0 8px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888;">' +
+				esc(i18n.message || 'Message') +
+				'</p>' +
 				'<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#333;line-height:1.6;">[your-message]</p>' +
 				'</td></tr>';
 		}
@@ -228,8 +234,9 @@
 		if (email.show_product_url) {
 			urlBlock =
 				'<tr><td style="padding:20px 24px;border-top:1px solid #e5e5e5;">' +
-				'<a href="[musomo_product_url]" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#014b43;text-decoration:underline;">View product</a>' +
-				'</td></tr>';
+				'<a href="[musomo_product_url]" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#014b43;text-decoration:underline;">' +
+				esc(i18n.viewProduct || 'View product') +
+				'</a></td></tr>';
 		}
 
 		var productSection = productRows
@@ -240,7 +247,9 @@
 
 		var customerSection = customerRows
 			? '<tr><td style="padding:20px 24px;border-top:1px solid #e5e5e5;">' +
-				'<p style="margin:0 0 12px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888;">Customer</p>' +
+				'<p style="margin:0 0 12px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888;">' +
+				esc(i18n.customer || 'Customer') +
+				'</p>' +
 				'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">' +
 				customerRows +
 				'</table></td></tr>'
@@ -312,7 +321,7 @@
 
 		html += '<div class="mq-ep__header">';
 		html += '<div class="mq-ep__site">' + esc(companyName(config)) + '</div>';
-		html += '<div class="mq-ep__title">' + esc(email.header_title || 'Quote request') + '</div>';
+		html += '<div class="mq-ep__title">' + esc(email.header_title || defaultHeader) + '</div>';
 		html += '</div>';
 
 		html += '<div class="mq-ep__body">';
@@ -454,7 +463,7 @@
 		}
 
 		function fail() {
-			window.alert(data.copyFailed || 'Copy failed');
+			window.alert(data.copyFailed || (i18n.copyFailed || 'Copy failed'));
 		}
 
 		if (navigator.clipboard && navigator.clipboard.writeText) {

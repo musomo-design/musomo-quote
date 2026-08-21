@@ -1,0 +1,1788 @@
+# Musomo Quote German translation.
+# Copyright (C) 2026 Musomo
+msgid ""
+msgstr ""
+"Project-Id-Version: Musomo Quote 2.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/musomo-design/musomo-quote/issues\n"
+"POT-Creation-Date: 2026-08-21 10:06+0000\n"
+"PO-Revision-Date: 2026-08-21 10:06+0000\n"
+"Last-Translator: Musomo <hello@musomo.net>\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: musomo-quote\n"
+
+#: admin/views/dashboard.php:89
+msgid "%1$d of %2$d completed"
+msgstr "%1$d von %2$d abgeschlossen"
+
+#: includes/class-musomo-quote-tools.php:189
+msgid "%1$s (#%2$d)"
+msgstr "%1$s (#%2$d)"
+
+#: includes/class-musomo-quote-tools.php:363
+msgid "%1$s (%2$d languages)"
+msgstr "%1$s (%2$d Sprachen)"
+
+#: includes/helpers.php:488
+msgid "%1$s — 1 global + %2$d translations"
+msgstr "%1$s — 1 global + %2$d Übersetzungen"
+
+#: includes/class-musomo-quote-tools.php:658
+msgid "%d category IDs not available on this site were removed."
+msgstr "%d Kategorie-IDs, die auf dieser Website nicht verfügbar sind, wurden entfernt."
+
+#: includes/helpers.php:476
+msgid "%d linked forms (languages only)"
+msgstr "%d verknüpfte Formulare (nur Sprachen)"
+
+#: admin/views/settings-appearance.php:139
+msgid "100%"
+msgstr "100%"
+
+#: admin/views/settings-translations.php:200
+#: admin/views/settings-translations.php:43
+msgid "Accessible close label"
+msgstr "Barrierefreie Beschriftung zum Schließen"
+
+#: admin/views/dashboard.php:121
+#: admin/views/partial-tools-diagnostics.php:116
+#: admin/views/partial-tools-diagnostics.php:136
+msgid "Active"
+msgstr "Aktiv"
+
+#: admin/views/dashboard.php:203
+msgid "Active — %d languages"
+msgstr "Aktiv — %d Sprachen"
+
+#: admin/views/settings-general.php:44
+msgid "Add button while keeping “Add to cart”"
+msgstr "Button hinzufügen und „In den Warenkorb“ beibehalten"
+
+#: admin/views/settings-cf7-builder.php:306
+msgid "Additional headers"
+msgstr "Zusätzliche Header"
+
+#: admin/views/settings-restrictions.php:222
+msgid "Additional protections applied only to the Contact Form 7 form linked to Musomo Quote. They do not replace Turnstile or antispam already managed by CF7."
+msgstr "Zusätzliche Schutzfunktionen, die nur für das mit Musomo Quote verknüpfte Contact Form 7-Formular gelten. Sie ersetzen weder Turnstile noch den bereits von CF7 verwalteten Antispam-Schutz."
+
+#: admin/views/settings-general.php:70
+msgid "After Add to cart"
+msgstr "Nach „In den Warenkorb“"
+
+#: admin/views/settings-general.php:73
+msgid "After product summary"
+msgstr "Nach der Produktübersicht"
+
+#: admin/views/settings-restrictions.php:187
+msgid "All"
+msgstr "Alle"
+
+#: admin/views/settings-restrictions.php:67
+msgid "All categories"
+msgstr "Alle Kategorien"
+
+#: admin/views/settings-restrictions.php:75
+msgid "All except selected categories"
+msgstr "Alle außer den ausgewählten Kategorien"
+
+#: admin/views/settings-restrictions.php:164
+msgid "Allowed types"
+msgstr "Erlaubte Typen"
+
+#: admin/views/settings-cf7-builder.php:284
+msgid "Also copy Subject and Headers into their respective fields."
+msgstr "Kopiere außerdem Betreff und Header in die jeweiligen Felder."
+
+#: admin/views/partial-tools-diagnostics.php:232
+msgid "Analyze and preview"
+msgstr "Analysieren und Vorschau anzeigen"
+
+#: admin/views/settings-restrictions.php:316
+msgid "Analyzes only user-filled text fields. Excludes product URL, SKU, and Musomo hidden fields."
+msgstr "Analysiert nur die von Benutzern ausgefüllten Textfelder. Produkt-URL, SKU und versteckte Musomo-Felder sind ausgenommen."
+
+#: admin/views/dashboard.php:184
+msgid "Antispam status"
+msgstr "Antispam-Status"
+
+#: admin/views/settings-restrictions.php:141
+msgid "Any product"
+msgstr "Beliebiges Produkt"
+
+#: admin/views/settings-restrictions.php:116
+msgid "Any status"
+msgstr "Beliebiger Status"
+
+#: admin/views/partial-header.php:47
+#: admin/views/partial-tools-diagnostics.php:131
+#: admin/views/settings-appearance.php:14
+msgid "Appearance"
+msgstr "Darstellung"
+
+#: includes/class-musomo-quote-tools.php:372
+msgid "Appearance:"
+msgstr "Darstellung:"
+
+#: includes/class-musomo-quote-tools.php:272
+msgid "At least one CF7 form is linked."
+msgstr "Mindestens ein CF7-Formular ist verknüpft."
+
+#: admin/views/settings-appearance.php:137
+msgid "Auto"
+msgstr "Automatisch"
+
+#: admin/views/settings-restrictions.php:111
+msgid "Availability"
+msgstr "Verfügbarkeit"
+
+#: admin/views/partial-tools-diagnostics.php:120
+#: admin/views/partial-tools-diagnostics.php:124
+msgid "Available"
+msgstr "Verfügbar"
+
+#: admin/views/settings-translations.php:225
+#: admin/views/settings-translations.php:58
+msgid "Available for future use; quantity is already sent to CF7 hidden fields."
+msgstr "Für die künftige Verwendung vorgesehen; die Menge wird bereits an die versteckten CF7-Felder übergeben."
+
+#: admin/views/settings-appearance.php:163
+#: admin/views/settings-appearance.php:206
+#: admin/views/settings-appearance.php:89
+msgid "Background color"
+msgstr "Hintergrundfarbe"
+
+#: admin/views/settings-general.php:67
+msgid "Before Add to cart"
+msgstr "Vor „In den Warenkorb“"
+
+#: admin/views/settings-general.php:79
+msgid "Below price"
+msgstr "Unter dem Preis"
+
+#: admin/views/settings-general.php:76
+msgid "Below title"
+msgstr "Unter dem Titel"
+
+#: admin/views/settings-restrictions.php:321
+msgid "Blocked patterns"
+msgstr "Blockierte Muster"
+
+#: admin/views/settings-appearance.php:272
+#: admin/views/settings-appearance.php:97
+msgid "Border color"
+msgstr "Rahmenfarbe"
+
+#: admin/views/settings-appearance.php:109
+#: admin/views/settings-appearance.php:159
+#: admin/views/settings-appearance.php:210
+msgid "Border radius"
+msgstr "Eckenradius"
+
+#: admin/views/settings-cf7-builder.php:89
+msgid "Builder"
+msgstr "Generator"
+
+#: admin/views/settings-translations.php:172
+msgid "Button label"
+msgstr "Button-Beschriftung"
+
+#: admin/views/settings-general.php:39
+msgid "Button mode"
+msgstr "Button-Modus"
+
+#: admin/views/settings-general.php:62
+msgid "Button position"
+msgstr "Button-Position"
+
+#: admin/views/settings-translations.php:35
+msgid "Button text"
+msgstr "Button-Text"
+
+#: admin/views/settings-translations.php:168
+msgid "Button texts"
+msgstr "Button-Texte"
+
+#: admin/views/partial-tools-diagnostics.php:222
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: admin/views/settings-restrictions.php:82
+msgid "Categories"
+msgstr "Kategorien"
+
+#: admin/views/partial-tools-diagnostics.php:123
+msgid "CF7"
+msgstr "CF7"
+
+#: includes/class-musomo-quote-tools.php:371
+msgid "CF7 form:"
+msgstr "CF7-Formular:"
+
+#: admin/views/settings-general.php:127
+msgid "CF7 hidden fields: musomo_product_id, musomo_product_name, musomo_product_sku, musomo_product_url, musomo_product_image, musomo_product_price, musomo_product_type, musomo_quantity."
+msgstr "Versteckte CF7-Felder: musomo_product_id, musomo_product_name, musomo_product_sku, musomo_product_url, musomo_product_image, musomo_product_price, musomo_product_type, musomo_quantity."
+
+#: admin/views/settings-cf7-builder.php:144
+msgid "CF7 mail-tag"
+msgstr "CF7-Mail-Tag"
+
+#: admin/views/settings-translations.php:239
+#: admin/views/settings-translations.php:65
+#: includes/class-musomo-quote-security.php:588
+msgid "CF7 not available"
+msgstr "CF7 nicht verfügbar"
+
+#: admin/views/partial-header.php:50
+#: includes/class-musomo-quote-admin.php:108
+#: includes/class-musomo-quote-admin.php:109
+msgid "CF7 Template"
+msgstr "CF7-Vorlage"
+
+#: admin/views/dashboard.php:231
+msgid "Check out our documentation or contact support for assistance."
+msgstr "Sieh dir unsere Dokumentation an oder wende dich an den Support."
+
+#: admin/views/settings-translations.php:345
+msgid "Clear all multilingual overrides (texts and forms per language)? Global texts will remain unchanged."
+msgstr "Alle mehrsprachigen Überschreibungen (Texte und Formulare pro Sprache) löschen? Die globalen Texte bleiben unverändert."
+
+#: admin/views/settings-appearance.php:189
+msgid "Close button"
+msgstr "Schließen-Button"
+
+#: admin/views/settings-cf7-builder.php:80
+#: admin/views/settings-restrictions.php:238
+msgid "Cloudflare Turnstile"
+msgstr "Cloudflare Turnstile"
+
+#: admin/views/settings-cf7-builder.php:175
+msgid "Code for Contact Form 7"
+msgstr "Code für Contact Form 7"
+
+#: admin/views/settings-appearance.php:41
+msgid "Color picker"
+msgstr "Farbwähler"
+
+#: admin/views/placeholder.php:12
+msgid "Coming soon"
+msgstr "Demnächst verfügbar"
+
+#: admin/views/settings-appearance.php:245
+msgid "Compact"
+msgstr "Kompakt"
+
+#: admin/views/settings-cf7-builder.php:261
+#: includes/class-musomo-quote-cf7-builder.php:33
+#: includes/class-musomo-quote-cf7-builder.php:470
+msgid "Company"
+msgstr "Unternehmen"
+
+#: admin/views/settings-cf7-builder.php:217
+msgid "Company / Website name"
+msgstr "Name des Unternehmens / der Website"
+
+#: includes/class-musomo-quote-tools.php:891
+msgid "Configuration imported successfully."
+msgstr "Konfiguration erfolgreich importiert."
+
+#: admin/views/dashboard.php:48
+msgid "Configure form"
+msgstr "Formular konfigurieren"
+
+#: admin/views/dashboard.php:65
+msgid "Configure quote form"
+msgstr "Angebotsformular konfigurieren"
+
+#: admin/views/dashboard.php:77
+msgid "Configure template"
+msgstr "Vorlage konfigurieren"
+
+#: admin/views/settings-cf7-builder.php:38
+msgid "Configure the quote form and email. Mu Quote generates code ready to copy into Contact Form 7."
+msgstr "Konfiguriere das Angebotsformular und die E-Mail. Mu Quote erzeugt Code, der direkt in Contact Form 7 kopiert werden kann."
+
+#: admin/views/settings-cf7-builder.php:83
+msgid "Configure Turnstile via Contact Form 7 or an external integration."
+msgstr "Konfiguriere Turnstile über Contact Form 7 oder eine externe Integration."
+
+#: admin/views/partial-tools-diagnostics.php:217
+msgid "Confirm import"
+msgstr "Import bestätigen"
+
+#: admin/views/dashboard.php:47
+msgid "Connect integrations"
+msgstr "Integrationen verbinden"
+
+#: admin/views/dashboard.php:134
+#: admin/views/dashboard.php:147
+msgid "Connected"
+msgstr "Verbunden"
+
+#: admin/views/dashboard.php:145
+#: admin/views/partial-tools-diagnostics.php:54
+#: admin/views/settings-cf7-builder.php:48
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#: admin/views/settings-general.php:99
+msgid "Contact Form 7 form"
+msgstr "Contact Form 7-Formular"
+
+#: includes/class-musomo-quote-tools.php:712
+msgid "Contact Form 7 form #%d is not available on this site."
+msgstr "Das Contact Form 7-Formular #%d ist auf dieser Website nicht verfügbar."
+
+#: admin/views/settings-translations.php:111
+msgid "Contact Form 7 form for this language"
+msgstr "Contact Form 7-Formular für diese Sprache"
+
+#: includes/class-musomo-quote-tools.php:259
+msgid "Contact Form 7 is available."
+msgstr "Contact Form 7 ist verfügbar."
+
+#: includes/class-musomo-quote-tools.php:254
+msgid "Contact Form 7 is not active."
+msgstr "Contact Form 7 ist nicht aktiv."
+
+#: admin/views/settings-translations.php:117
+msgid "Contact Form 7 is not available."
+msgstr "Contact Form 7 ist nicht verfügbar."
+
+#: admin/views/settings-general.php:104
+msgid "Contact Form 7 is not available. Install or activate Contact Form 7 to use the quote request form."
+msgstr "Contact Form 7 ist nicht verfügbar. Installiere oder aktiviere Contact Form 7, um das Formular für Angebotsanfragen zu nutzen."
+
+#: includes/class-musomo-quote-tools.php:358
+msgid "Contact Form 7:"
+msgstr "Contact Form 7:"
+
+#: admin/views/partial-tools-diagnostics.php:144
+#: admin/views/settings-restrictions.php:250
+#: admin/views/settings-restrictions.php:310
+msgid "Content filter"
+msgstr "Inhaltsfilter"
+
+#: includes/class-musomo-quote-tools.php:378
+msgid "Content filter:"
+msgstr "Inhaltsfilter:"
+
+#: admin/views/partial-tools-diagnostics.php:103
+#: admin/views/settings-cf7-builder.php:186
+#: admin/views/settings-cf7-builder.php:295
+msgid "Copied!"
+msgstr "Kopiert!"
+
+#: admin/views/settings-cf7-builder.php:294
+msgid "Copy email template"
+msgstr "E-Mail-Vorlage kopieren"
+
+#: includes/class-musomo-quote-admin.php:311
+#: includes/class-musomo-quote-cf7-builder.php:585
+#: includes/class-musomo-quote-cf7-builder.php:610
+msgid "Copy failed"
+msgstr "Kopieren fehlgeschlagen"
+
+#: admin/views/settings-cf7-builder.php:184
+msgid "Copy form code"
+msgstr "Formularcode kopieren"
+
+#: admin/views/settings-cf7-builder.php:293
+msgid "Copy headers"
+msgstr "Header kopieren"
+
+#: admin/views/settings-cf7-builder.php:292
+msgid "Copy subject"
+msgstr "Betreff kopieren"
+
+#: admin/views/partial-tools-diagnostics.php:101
+msgid "Copy system information"
+msgstr "Systeminformationen kopieren"
+
+#: admin/views/settings-cf7-builder.php:177
+msgid "Copy the code."
+msgstr "Kopiere den Code."
+
+#: admin/views/settings-restrictions.php:340
+msgid "Counts linked form submission attempts (not modal opens). Uses temporary transients with IP hash."
+msgstr "Zählt die Absendeversuche des verknüpften Formulars (nicht das Öffnen des Dialogfensters). Verwendet temporäre Transients mit IP-Hash."
+
+#: admin/views/dashboard.php:67
+msgid "Create the form and email for Contact Form 7."
+msgstr "Erstelle das Formular und die E-Mail für Contact Form 7."
+
+#: admin/views/settings-appearance.php:79
+#: includes/class-musomo-quote-tools.php:198
+msgid "Custom"
+msgstr "Individuell"
+
+#: admin/views/settings-general.php:82
+msgid "Custom position via hook"
+msgstr "Individuelle Position über einen Hook"
+
+#: includes/class-musomo-quote-cf7-builder.php:511
+#: includes/class-musomo-quote-cf7-builder.php:609
+msgid "Customer"
+msgstr "Kunde"
+
+#: admin/views/settings-cf7-builder.php:255
+msgid "Customer content"
+msgstr "Kundeninhalte"
+
+#: admin/views/settings-cf7-builder.php:259
+msgid "Customer name"
+msgstr "Name des Kunden"
+
+#: admin/views/dashboard.php:49
+msgid "Customize template"
+msgstr "Vorlage anpassen"
+
+#: admin/views/dashboard.php:14
+#: admin/views/partial-header.php:14
+#: admin/views/partial-header.php:45
+msgid "Dashboard"
+msgstr "Übersicht"
+
+#: admin/views/settings-general.php:119
+msgid "Default / fallback form. With Polylang you can assign different forms per language in Texts & translations."
+msgstr "Standard- bzw. Ersatzformular. Mit Polylang kannst du unter Texte & Übersetzungen pro Sprache unterschiedliche Formulare zuweisen."
+
+#: admin/views/settings-translations.php:290
+msgid "Default language / Global"
+msgstr "Standardsprache / Global"
+
+#: admin/views/settings-appearance.php:305
+msgid "Demo preview. Does not use a real Contact Form 7 form. Save to apply on the frontend."
+msgstr "Demo-Vorschau. Es wird kein echtes Contact Form 7-Formular verwendet. Speichere, um die Änderungen im Frontend anzuwenden."
+
+#: admin/views/settings-cf7-builder.php:51
+#: admin/views/settings-restrictions.php:233
+msgid "Detected"
+msgstr "Erkannt"
+
+#: admin/views/partial-tools-diagnostics.php:29
+msgid "Diagnostics"
+msgstr "Diagnose"
+
+#: admin/views/partial-tools-diagnostics.php:140
+#: admin/views/settings-restrictions.php:245
+#: admin/views/settings-restrictions.php:253
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: admin/views/dashboard.php:235
+#: admin/views/partial-header.php:33
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: admin/views/partial-tools-diagnostics.php:170
+msgid "Download a JSON file with Musomo Quote settings. CF7 and category IDs may not match on another site."
+msgstr "Lade eine JSON-Datei mit den Einstellungen von Musomo Quote herunter. CF7- und Kategorie-IDs stimmen auf einer anderen Website möglicherweise nicht überein."
+
+#: admin/views/settings-appearance.php:340
+#: admin/views/settings-cf7-builder.php:262
+#: admin/views/settings-cf7-builder.php:94
+msgid "Email"
+msgstr "E-Mail"
+
+#: admin/views/settings-cf7-builder.php:208
+msgid "Email header"
+msgstr "E-Mail-Kopfbereich"
+
+#: admin/views/settings-cf7-builder.php:278
+msgid "Email ready for Contact Form 7"
+msgstr "E-Mail fertig für Contact Form 7"
+
+#: admin/views/settings-cf7-builder.php:224
+msgid "Email subject"
+msgstr "E-Mail-Betreff"
+
+#: admin/views/settings-cf7-builder.php:220
+msgid "Empty = WordPress site name."
+msgstr "Leer = Name der WordPress-Website."
+
+#: admin/views/settings-restrictions.php:276
+msgid "Enable hidden honeypot"
+msgstr "Verstecktes Honeypot-Feld aktivieren"
+
+#: admin/views/settings-restrictions.php:286
+msgid "Enable minimum submit time check"
+msgstr "Prüfung der Mindestzeit vor dem Absenden aktivieren"
+
+#: admin/views/settings-general.php:34
+msgid "Enable Musomo Quote on the frontend"
+msgstr "Musomo Quote im Frontend aktivieren"
+
+#: admin/views/settings-restrictions.php:314
+msgid "Enable pattern filter on user fields"
+msgstr "Musterfilter für Benutzerfelder aktivieren"
+
+#: includes/class-musomo-quote-woocommerce.php:222
+msgid "Enable quote request for this product"
+msgstr "Angebotsanfrage für dieses Produkt aktivieren"
+
+#: admin/views/settings-restrictions.php:338
+msgid "Enable request limit"
+msgstr "Anfragelimit aktivieren"
+
+#: admin/views/settings-cf7-builder.php:282
+msgid "Enable “Use HTML content type”."
+msgstr "Aktiviere „HTML-Inhaltstyp verwenden“."
+
+#: admin/views/partial-tools-diagnostics.php:33
+msgid "Environment"
+msgstr "Umgebung"
+
+#: includes/class-musomo-quote-tools.php:452
+#: includes/class-musomo-quote-tools.php:464
+msgid "Error uploading the file."
+msgstr "Fehler beim Hochladen der Datei."
+
+#: includes/class-musomo-quote-tools.php:321
+msgid "Everything configured correctly."
+msgstr "Alles korrekt konfiguriert."
+
+#: includes/class-musomo-quote-cf7-builder.php:554
+msgid "Example Company"
+msgstr "Beispielfirma"
+
+#: admin/views/partial-tools-diagnostics.php:164
+msgid "Export / Import"
+msgstr "Export / Import"
+
+#: admin/views/partial-tools-diagnostics.php:168
+#: admin/views/partial-tools-diagnostics.php:175
+msgid "Export configuration"
+msgstr "Konfiguration exportieren"
+
+#: admin/views/partial-tools-diagnostics.php:194
+msgid "Export version:"
+msgstr "Export-Version:"
+
+#: admin/views/settings-restrictions.php:169
+msgid "External / Affiliate"
+msgstr "Extern / Affiliate"
+
+#: admin/views/settings-cf7-builder.php:110
+#: admin/views/settings-cf7-builder.php:143
+msgid "Field"
+msgstr "Feld"
+
+#: admin/views/settings-appearance.php:268
+msgid "Field border radius"
+msgstr "Eckenradius der Felder"
+
+#: admin/views/settings-appearance.php:258
+msgid "Field height"
+msgstr "Höhe der Felder"
+
+#: includes/class-musomo-quote-tools.php:458
+#: includes/class-musomo-quote-tools.php:470
+msgid "File too large or empty (1 MB limit)."
+msgstr "Datei zu groß oder leer (Grenze: 1 MB)."
+
+#: admin/views/partial-tools-diagnostics.php:190
+msgid "File:"
+msgstr "Datei:"
+
+#: admin/views/settings-appearance.php:276
+msgid "Focus color"
+msgstr "Fokusfarbe"
+
+#: admin/views/settings-appearance.php:121
+msgid "Font size"
+msgstr "Schriftgröße"
+
+#: admin/views/settings-appearance.php:125
+msgid "Font weight"
+msgstr "Schriftstärke"
+
+#: admin/views/settings-appearance.php:255
+#: admin/views/settings-cf7-builder.php:91
+msgid "Form"
+msgstr "Formular"
+
+#: admin/views/settings-cf7-builder.php:106
+msgid "Form fields"
+msgstr "Formularfelder"
+
+#: admin/views/settings-translations.php:235
+#: admin/views/settings-translations.php:61
+msgid "Form not configured"
+msgstr "Formular nicht konfiguriert"
+
+#: includes/class-musomo-quote-tools.php:284
+msgid "Frontend plugin active."
+msgstr "Plugin im Frontend aktiv."
+
+#: includes/class-musomo-quote-tools.php:279
+msgid "Frontend plugin disabled."
+msgstr "Plugin im Frontend deaktiviert."
+
+#: admin/views/settings-general.php:26
+msgid "General"
+msgstr "Allgemein"
+
+#: admin/views/settings-translations.php:273
+#: includes/helpers.php:439
+msgid "Global"
+msgstr "Global"
+
+#: admin/views/settings-translations.php:267
+msgid "Global texts are the fallback. For each language you can override texts and assign a dedicated CF7 form. Leave a language field empty to use the global value."
+msgstr "Die globalen Texte dienen als Rückfallebene. Für jede Sprache kannst du Texte überschreiben und ein eigenes CF7-Formular zuweisen. Lass ein Sprachfeld leer, um den globalen Wert zu verwenden."
+
+#: admin/views/settings-cf7-builder.php:281
+msgid "Go to the Mail tab."
+msgstr "Wechsle zum Tab „Mail“."
+
+#: admin/views/settings-restrictions.php:168
+msgid "Grouped"
+msgstr "Gruppiert"
+
+#: admin/views/settings-cf7-builder.php:211
+msgid "Header title"
+msgstr "Titel des Kopfbereichs"
+
+#: admin/views/settings-appearance.php:113
+msgid "Height"
+msgstr "Höhe"
+
+#: includes/class-musomo-quote-cf7-builder.php:557
+msgid "Hello, I would like information about this product."
+msgstr "Hallo, ich hätte gern Informationen zu diesem Produkt."
+
+#: admin/views/settings-restrictions.php:278
+msgid "Hidden field for bots. If filled, the request is treated as spam by CF7."
+msgstr "Verstecktes Feld für Bots. Wird es ausgefüllt, behandelt CF7 die Anfrage als Spam."
+
+#: admin/views/partial-tools-diagnostics.php:142
+#: admin/views/settings-restrictions.php:272
+msgid "Honeypot"
+msgstr "Honeypot"
+
+#: admin/views/settings-restrictions.php:242
+msgid "Honeypot Musomo"
+msgstr "Honeypot Musomo"
+
+#: includes/class-musomo-quote-tools.php:376
+msgid "Honeypot:"
+msgstr "Honeypot:"
+
+#: admin/views/settings-appearance.php:246
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: admin/views/settings-appearance.php:117
+msgid "Horizontal padding"
+msgstr "Horizontaler Innenabstand"
+
+#: admin/views/settings-appearance.php:101
+msgid "Hover background"
+msgstr "Hintergrund beim Hover"
+
+#: admin/views/settings-appearance.php:105
+msgid "Hover text"
+msgstr "Text beim Hover"
+
+#: admin/views/settings-appearance.php:202
+msgid "Icon color"
+msgstr "Farbe des Symbols"
+
+#: admin/views/settings-cf7-builder.php:64
+msgid "ID %d"
+msgstr "ID %d"
+
+#: includes/helpers.php:461
+msgid "ID %d (CF7 not active)"
+msgstr "ID %d (CF7 nicht aktiv)"
+
+#: includes/class-musomo-quote-tools.php:192
+msgid "ID %d (not available)"
+msgstr "ID %d (nicht verfügbar)"
+
+#: admin/views/settings-translations.php:142
+msgid "ID %d (not found)"
+msgstr "ID %d (nicht gefunden)"
+
+#: admin/views/dashboard.php:244
+msgid "If Musomo Quote is useful for your store or projects, you can"
+msgstr "Wenn Musomo Quote für deinen Shop oder deine Projekte nützlich ist, kannst du"
+
+#: admin/views/settings-restrictions.php:171
+msgid "If no type is selected, Musomo Quote is available for all product types."
+msgstr "Wenn kein Typ ausgewählt ist, steht Musomo Quote für alle Produkttypen zur Verfügung."
+
+#: admin/views/settings-appearance.php:232
+msgid "Image size"
+msgstr "Bildgröße"
+
+#: includes/class-musomo-quote-tools.php:895
+msgid "Import cancelled."
+msgstr "Import abgebrochen."
+
+#: includes/class-musomo-quote-tools.php:892
+msgid "Import completed with warnings. Check diagnostics and CF7 forms."
+msgstr "Import mit Warnungen abgeschlossen. Prüfe die Diagnose und die CF7-Formulare."
+
+#: admin/views/partial-tools-diagnostics.php:180
+msgid "Import configuration"
+msgstr "Konfiguration importieren"
+
+#: includes/class-musomo-quote-tools.php:894
+msgid "Import preview expired. Upload the file again."
+msgstr "Die Import-Vorschau ist abgelaufen. Lade die Datei erneut hoch."
+
+#: admin/views/settings-restrictions.php:54
+msgid "In Replace mode, Add to cart is removed only when the Request a quote button is available for the product."
+msgstr "Im Modus „Ersetzen“ wird „In den Warenkorb“ nur entfernt, wenn der Button „Angebot anfordern“ für das Produkt verfügbar ist."
+
+#: admin/views/settings-general.php:121
+msgid "In the CF7 form you can use hidden fields: musomo_product_id, musomo_product_name, musomo_product_sku, musomo_product_url, musomo_product_image, musomo_product_price, musomo_product_type, musomo_quantity."
+msgstr "Im CF7-Formular kannst du versteckte Felder verwenden: musomo_product_id, musomo_product_name, musomo_product_sku, musomo_product_url, musomo_product_image, musomo_product_price, musomo_product_type, musomo_quantity."
+
+#: admin/views/settings-general.php:86
+msgid "In “replace” mode, before/after Add to cart positions place the button where Add to cart was."
+msgstr "Im Modus „ersetzen“ platzieren die Positionen vor/nach „In den Warenkorb“ den Button dort, wo sich „In den Warenkorb“ befand."
+
+#: admin/views/settings-general.php:56
+msgid "In “selected products only” mode, enable the Musomo Quote option on the product tab (Product data → General)."
+msgstr "Aktiviere im Modus „nur ausgewählte Produkte“ die Option Musomo Quote im Produkt-Tab (Produktdaten → Allgemein)."
+
+#: admin/views/settings-restrictions.php:120
+msgid "In-stock products only"
+msgstr "Nur Produkte auf Lager"
+
+#: admin/views/dashboard.php:121
+#: admin/views/partial-tools-diagnostics.php:116
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: admin/views/settings-appearance.php:71
+#: includes/class-musomo-quote-tools.php:202
+msgid "Inherit from theme"
+msgstr "Vom Theme übernehmen"
+
+#: admin/views/settings-appearance.php:171
+msgid "Inner padding"
+msgstr "Innenabstand"
+
+#: admin/views/settings-translations.php:163
+msgid "Install/activate Polylang to manage different texts per language."
+msgstr "Installiere/aktiviere Polylang, um unterschiedliche Texte pro Sprache zu verwalten."
+
+#: includes/class-musomo-quote-tools.php:893
+msgid "Invalid file."
+msgstr "Ungültige Datei."
+
+#: includes/class-musomo-quote-tools.php:490
+msgid "Invalid JSON."
+msgstr "Ungültiges JSON."
+
+#: includes/class-musomo-quote-cf7-builder.php:552
+msgid "John"
+msgstr "Max"
+
+#: admin/views/settings-translations.php:271
+msgid "Languages"
+msgstr "Sprachen"
+
+#: admin/views/settings-cf7-builder.php:260
+#: includes/class-musomo-quote-cf7-builder.php:28
+#: includes/class-musomo-quote-cf7-builder.php:467
+msgid "Last name"
+msgstr "Nachname"
+
+#: admin/views/settings-appearance.php:242
+msgid "Layout"
+msgstr "Layout"
+
+#: admin/views/settings-translations.php:88
+#: admin/views/settings-translations.php:97
+msgid "Leave empty to use global text"
+msgstr "Leer lassen, um den globalen Text zu verwenden"
+
+#: admin/views/settings-restrictions.php:288
+msgid "Light anti-bot protection. Client timestamp is not strong security."
+msgstr "Leichter Bot-Schutz. Der Zeitstempel des Clients ist keine starke Sicherheitsmaßnahme."
+
+#: admin/views/dashboard.php:158
+msgid "Linked CF7 form"
+msgstr "Verknüpftes CF7-Formular"
+
+#: admin/views/dashboard.php:72
+msgid "Linked CF7 form:"
+msgstr "Verknüpftes CF7-Formular:"
+
+#: admin/views/settings-cf7-builder.php:56
+msgid "Linked form"
+msgstr "Verknüpftes Formular"
+
+#: admin/views/partial-tools-diagnostics.php:127
+msgid "Linked global form"
+msgstr "Verknüpftes globales Formular"
+
+#: includes/class-musomo-quote-tools.php:351
+msgid "Locale:"
+msgstr "Gebietsschema:"
+
+#: admin/views/settings-restrictions.php:191
+msgid "Logged-in users only"
+msgstr "Nur angemeldete Benutzer"
+
+#: admin/views/settings-restrictions.php:195
+msgid "Logged-out visitors only"
+msgstr "Nur nicht angemeldete Besucher"
+
+#: includes/class-musomo-quote-security.php:585
+msgid "Managed by Contact Form 7 / external integration"
+msgstr "Verwaltet von Contact Form 7 / externer Integration"
+
+#: admin/views/settings-restrictions.php:345
+msgid "Max requests"
+msgstr "Maximale Anzahl an Anfragen"
+
+#: admin/views/partial-tools-diagnostics.php:41
+msgid "max_execution_time"
+msgstr "max_execution_time"
+
+#: admin/views/partial-tools-diagnostics.php:40
+msgid "memory_limit"
+msgstr "memory_limit"
+
+#: admin/views/settings-appearance.php:345
+#: admin/views/settings-cf7-builder.php:264
+#: includes/class-musomo-quote-cf7-builder.php:488
+msgid "Message"
+msgstr "Nachricht"
+
+#: admin/views/settings-cf7-builder.php:308
+msgid "Message body (HTML)"
+msgstr "Nachrichtentext (HTML)"
+
+#: admin/views/settings-restrictions.php:293
+msgid "Minimum seconds before submit"
+msgstr "Mindestsekunden vor dem Absenden"
+
+#: includes/class-musomo-quote-tools.php:500
+msgid "Missing or invalid settings in the file."
+msgstr "Fehlende oder ungültige Einstellungen in der Datei."
+
+#: admin/views/settings-translations.php:188
+msgid "Modal"
+msgstr "Dialogfenster"
+
+#: admin/views/settings-translations.php:192
+#: admin/views/settings-translations.php:39
+msgid "Modal title"
+msgstr "Titel des Dialogfensters"
+
+#: admin/views/partial-tools-diagnostics.php:81
+msgid "Mode"
+msgstr "Modus"
+
+#: includes/class-musomo-quote-tools.php:370
+msgid "Mode:"
+msgstr "Modus:"
+
+#: includes/class-musomo-quote-admin.php:53
+msgid "Mu Quote"
+msgstr "Mu Quote"
+
+#: admin/views/settings-cf7-builder.php:41
+msgid "Mu Quote does not automatically modify your CF7 forms."
+msgstr "Mu Quote ändert deine CF7-Formulare nicht automatisch."
+
+#: admin/views/partial-tools-diagnostics.php:147
+msgid "Multilingual"
+msgstr "Mehrsprachigkeit"
+
+#: admin/views/settings-appearance.php:75
+#: includes/class-musomo-quote-tools.php:200
+msgid "Musomo"
+msgstr "Musomo"
+
+#: admin/views/settings-cf7-builder.php:76
+#: admin/views/settings-restrictions.php:269
+msgid "Musomo protections"
+msgstr "Schutzfunktionen von Musomo"
+
+#: admin/views/partial-header.php:24
+#: admin/views/partial-tools-diagnostics.php:76
+#: includes/class-musomo-quote-admin.php:52
+msgid "Musomo Quote"
+msgstr "Musomo Quote"
+
+#: admin/views/partial-tools-diagnostics.php:111
+msgid "Musomo Quote configuration"
+msgstr "Konfiguration von Musomo Quote"
+
+#: includes/class-musomo-quote-admin.php:387
+msgid "Musomo Quote requires Contact Form 7. Install and activate Contact Form 7 to use quote forms."
+msgstr "Musomo Quote benötigt Contact Form 7. Installiere und aktiviere Contact Form 7, um Angebotsformulare zu nutzen."
+
+#: includes/class-musomo-quote-admin.php:381
+msgid "Musomo Quote requires WooCommerce. Install and activate WooCommerce to use product features."
+msgstr "Musomo Quote benötigt WooCommerce. Installiere und aktiviere WooCommerce, um die Produktfunktionen zu nutzen."
+
+#: admin/views/partial-header.php:42
+msgid "Musomo Quote sections"
+msgstr "Bereiche von Musomo Quote"
+
+#: includes/class-musomo-quote-tools.php:346
+msgid "Musomo Quote System Info"
+msgstr "Systeminformationen zu Musomo Quote"
+
+#: includes/class-musomo-quote-tools.php:349
+msgid "Musomo Quote:"
+msgstr "Musomo Quote:"
+
+#: admin/views/settings-cf7-builder.php:30
+#: includes/helpers.php:425
+msgid "N/A"
+msgstr "k. A."
+
+#: admin/views/settings-appearance.php:335
+#: includes/class-musomo-quote-cf7-builder.php:23
+#: includes/class-musomo-quote-cf7-builder.php:464
+msgid "Name"
+msgstr "Name"
+
+#: admin/views/dashboard.php:230
+msgid "Need help getting started?"
+msgstr "Brauchst du Hilfe beim Einstieg?"
+
+#: includes/class-musomo-quote-cf7-builder.php:120
+#: includes/class-musomo-quote-cf7-builder.php:597
+msgid "New quote request — [musomo_product_name]"
+msgstr "Neue Angebotsanfrage — [musomo_product_name]"
+
+#: includes/class-musomo-quote-tools.php:340
+msgid "No"
+msgstr "Nein"
+
+#: admin/views/settings-cf7-builder.php:70
+msgid "No CF7 form is linked. You can create the template now and link the form later."
+msgstr "Es ist kein CF7-Formular verknüpft. Du kannst die Vorlage jetzt erstellen und das Formular später verknüpfen."
+
+#: includes/class-musomo-quote-tools.php:267
+msgid "No CF7 form linked."
+msgstr "Kein CF7-Formular verknüpft."
+
+#: includes/class-musomo-quote-tools.php:447
+msgid "No file selected."
+msgstr "Keine Datei ausgewählt."
+
+#: admin/views/dashboard.php:73
+#: admin/views/settings-cf7-builder.php:68
+msgid "No linked form"
+msgstr "Kein verknüpftes Formular"
+
+#: admin/views/settings-translations.php:129
+msgid "No override / use global"
+msgstr "Keine Überschreibung / global verwenden"
+
+#: admin/views/partial-tools-diagnostics.php:136
+#: includes/class-musomo-quote-tools.php:373
+msgid "None"
+msgstr "Keines"
+
+#: admin/views/partial-tools-diagnostics.php:49
+#: admin/views/partial-tools-diagnostics.php:59
+#: admin/views/partial-tools-diagnostics.php:71
+msgid "Not active"
+msgstr "Nicht aktiv"
+
+#: admin/views/partial-tools-diagnostics.php:120
+#: admin/views/partial-tools-diagnostics.php:124
+msgid "Not available"
+msgstr "Nicht verfügbar"
+
+#: includes/class-musomo-quote-tools.php:184
+msgid "Not configured"
+msgstr "Nicht konfiguriert"
+
+#: admin/views/dashboard.php:134
+#: admin/views/dashboard.php:147
+#: admin/views/settings-cf7-builder.php:51
+msgid "Not detected"
+msgstr "Nicht erkannt"
+
+#: admin/views/settings-cf7-builder.php:31
+#: includes/class-musomo-quote-security.php:590
+msgid "Not detected automatically"
+msgstr "Nicht automatisch erkannt"
+
+#: includes/helpers.php:453
+#: includes/helpers.php:464
+#: includes/helpers.php:469
+msgid "Not linked"
+msgstr "Nicht verknüpft"
+
+#: admin/views/dashboard.php:208
+msgid "Not present (optional)"
+msgstr "Nicht vorhanden (optional)"
+
+#: admin/views/partial-tools-diagnostics.php:22
+#: admin/views/partial-tools-diagnostics.php:79
+#: includes/class-musomo-quote-tools.php:342
+msgid "OFF"
+msgstr "OFF"
+
+#: admin/views/partial-tools-diagnostics.php:22
+#: admin/views/partial-tools-diagnostics.php:79
+#: includes/class-musomo-quote-tools.php:341
+msgid "ON"
+msgstr "ON"
+
+#: admin/views/settings-restrictions.php:330
+msgid "One pattern per line. Case-insensitive matching. Not regex."
+msgstr "Ein Muster pro Zeile. Groß- und Kleinschreibung wird nicht berücksichtigt. Keine regulären Ausdrücke."
+
+#: includes/class-musomo-quote-tools.php:477
+msgid "Only .json files are accepted."
+msgstr "Es werden nur .json-Dateien akzeptiert."
+
+#: admin/views/settings-restrictions.php:100
+msgid "Only categories assigned to the product are matched (no automatic parent → child inheritance)."
+msgstr "Es werden nur die dem Produkt zugewiesenen Kategorien berücksichtigt (keine automatische Vererbung von übergeordnet → untergeordnet)."
+
+#: admin/views/settings-cf7-builder.php:178
+msgid "Open Contact → Contact Forms."
+msgstr "Öffne Kontakt → Kontaktformulare."
+
+#: admin/views/settings-cf7-builder.php:280
+msgid "Open the form in Contact Form 7."
+msgstr "Öffne das Formular in Contact Form 7."
+
+#: admin/views/settings-cf7-builder.php:179
+msgid "Open the form used by Mu Quote."
+msgstr "Öffne das von Mu Quote verwendete Formular."
+
+#: includes/class-musomo-quote-cf7-builder.php:547
+msgid "Organic dad hat"
+msgstr "Bio-Basecap"
+
+#: admin/views/settings-restrictions.php:124
+msgid "Out-of-stock products only"
+msgstr "Nur nicht vorrätige Produkte"
+
+#: admin/views/settings-appearance.php:175
+msgid "Overlay color"
+msgstr "Farbe des Overlays"
+
+#: admin/views/settings-appearance.php:179
+msgid "Overlay opacity"
+msgstr "Deckkraft des Overlays"
+
+#: includes/class-musomo-quote-security.php:627
+msgid "Partial"
+msgstr "Teilweise"
+
+#: admin/views/settings-cf7-builder.php:180
+msgid "Paste the code in the Form tab."
+msgstr "Füge den Code im Tab „Formular“ ein."
+
+#: admin/views/settings-cf7-builder.php:283
+msgid "Paste the template in the message body."
+msgstr "Füge die Vorlage in den Nachrichtentext ein."
+
+#: admin/views/settings-cf7-builder.php:263
+#: includes/class-musomo-quote-cf7-builder.php:43
+#: includes/class-musomo-quote-cf7-builder.php:476
+msgid "Phone"
+msgstr "Telefon"
+
+#: admin/views/partial-tools-diagnostics.php:39
+msgid "PHP"
+msgstr "PHP"
+
+#: includes/class-musomo-quote-tools.php:296
+msgid "PHP 7.4 detected: works, but PHP 8+ is recommended."
+msgstr "PHP 7.4 erkannt: funktioniert, empfohlen wird jedoch PHP 8+."
+
+#: includes/class-musomo-quote-tools.php:355
+msgid "PHP max_execution_time:"
+msgstr "PHP max_execution_time:"
+
+#: includes/class-musomo-quote-tools.php:354
+msgid "PHP memory_limit:"
+msgstr "PHP memory_limit:"
+
+#: includes/class-musomo-quote-tools.php:356
+msgid "PHP upload_max_filesize:"
+msgstr "PHP upload_max_filesize:"
+
+#: includes/class-musomo-quote-tools.php:291
+msgid "PHP version below requirements (7.4+)."
+msgstr "PHP-Version unterhalb der Anforderungen (7.4+)."
+
+#: includes/class-musomo-quote-tools.php:301
+msgid "PHP version suitable."
+msgstr "PHP-Version geeignet."
+
+#: includes/class-musomo-quote-tools.php:353
+msgid "PHP:"
+msgstr "PHP:"
+
+#: admin/views/settings-general.php:30
+msgid "Plugin active"
+msgstr "Plugin aktiv"
+
+#: admin/views/partial-tools-diagnostics.php:78
+msgid "Plugin enabled"
+msgstr "Plugin aktiviert"
+
+#: includes/class-musomo-quote-tools.php:369
+msgid "Plugin enabled:"
+msgstr "Plugin aktiviert:"
+
+#: admin/views/partial-tools-diagnostics.php:115
+msgid "Plugin frontend"
+msgstr "Plugin-Frontend"
+
+#: admin/views/dashboard.php:119
+msgid "Plugin status"
+msgstr "Plugin-Status"
+
+#: admin/views/dashboard.php:197
+#: admin/views/partial-tools-diagnostics.php:64
+msgid "Polylang"
+msgstr "Polylang"
+
+#: admin/views/partial-tools-diagnostics.php:152
+msgid "Polylang active — %d languages"
+msgstr "Polylang aktiv — %d Sprachen"
+
+#: includes/class-musomo-quote-tools.php:623
+msgid "Polylang is not active, but the file contains translations. They will be saved and used when Polylang is available."
+msgstr "Polylang ist nicht aktiv, die Datei enthält aber Übersetzungen. Sie werden gespeichert und verwendet, sobald Polylang verfügbar ist."
+
+#: admin/views/partial-tools-diagnostics.php:154
+msgid "Polylang not active"
+msgstr "Polylang nicht aktiv"
+
+#: includes/class-musomo-quote-tools.php:360
+msgid "Polylang:"
+msgstr "Polylang:"
+
+#: admin/views/settings-appearance.php:304
+msgid "Preview"
+msgstr "Vorschau"
+
+#: admin/views/settings-cf7-builder.php:316
+msgid "Preview email"
+msgstr "E-Mail-Vorschau"
+
+#: admin/views/settings-cf7-builder.php:197
+msgid "Preview form"
+msgstr "Formularvorschau"
+
+#: admin/views/partial-tools-diagnostics.php:187
+msgid "Preview import"
+msgstr "Import in der Vorschau prüfen"
+
+#: admin/views/settings-cf7-builder.php:317
+msgid "Preview with demo data. The copied template uses CF7 mail-tags."
+msgstr "Vorschau mit Demodaten. Die kopierte Vorlage verwendet CF7-Mail-Tags."
+
+#: admin/views/settings-cf7-builder.php:239
+#: admin/views/settings-restrictions.php:133
+#: admin/views/settings-restrictions.php:136
+msgid "Price"
+msgstr "Preis"
+
+#: admin/views/settings-restrictions.php:153
+msgid "Price 0 counts as “with price”. Only an empty price counts as “without price”."
+msgstr "Der Preis 0 gilt als „mit Preis“. Nur ein leerer Preis gilt als „ohne Preis“."
+
+#: admin/views/settings-translations.php:218
+#: admin/views/settings-translations.php:52
+msgid "Price label"
+msgstr "Preis-Beschriftung"
+
+#: includes/class-musomo-quote-cf7-builder.php:450
+#: includes/class-musomo-quote-cf7-builder.php:600
+msgid "Price:"
+msgstr "Preis:"
+
+#: admin/views/settings-restrictions.php:59
+msgid "Product categories"
+msgstr "Produktkategorien"
+
+#: admin/views/settings-cf7-builder.php:233
+msgid "Product content"
+msgstr "Produktinhalte"
+
+#: admin/views/settings-cf7-builder.php:135
+msgid "Product data (ID, name, SKU, URL, image, price, type) is added automatically as hidden fields."
+msgstr "Produktdaten (ID, Name, SKU, URL, Bild, Preis, Typ) werden automatisch als versteckte Felder hinzugefügt."
+
+#: admin/views/settings-cf7-builder.php:236
+msgid "Product image"
+msgstr "Produktbild"
+
+#: admin/views/settings-appearance.php:328
+#: admin/views/settings-cf7-builder.php:237
+msgid "Product name"
+msgstr "Produktname"
+
+#: admin/views/settings-appearance.php:217
+#: admin/views/settings-translations.php:211
+msgid "Product summary"
+msgstr "Produktübersicht"
+
+#: admin/views/settings-restrictions.php:161
+msgid "Product types"
+msgstr "Produkttypen"
+
+#: admin/views/settings-cf7-builder.php:241
+msgid "Product URL"
+msgstr "Produkt-URL"
+
+#: admin/views/settings-restrictions.php:47
+msgid "Product visibility & restrictions"
+msgstr "Produktsichtbarkeit & Einschränkungen"
+
+#: admin/views/settings-restrictions.php:149
+msgid "Products with price only"
+msgstr "Nur Produkte mit Preis"
+
+#: admin/views/settings-restrictions.php:145
+msgid "Products without price only"
+msgstr "Nur Produkte ohne Preis"
+
+#: admin/views/settings-cf7-builder.php:240
+#: includes/class-musomo-quote-cf7-builder.php:48
+msgid "Quantity"
+msgstr "Menge"
+
+#: admin/views/settings-translations.php:222
+#: admin/views/settings-translations.php:56
+msgid "Quantity label"
+msgstr "Mengen-Beschriftung"
+
+#: includes/class-musomo-quote-cf7-builder.php:454
+#: includes/class-musomo-quote-cf7-builder.php:601
+msgid "Quantity:"
+msgstr "Menge:"
+
+#: admin/views/dashboard.php:220
+msgid "Quote products"
+msgstr "Produkte mit Angebotsanfrage"
+
+#: includes/class-musomo-quote-cf7-builder.php:117
+#: includes/class-musomo-quote-cf7-builder.php:424
+#: includes/class-musomo-quote-cf7-builder.php:595
+msgid "Quote request"
+msgstr "Angebotsanfrage"
+
+#: admin/views/settings-general.php:94
+msgid "Quote request form"
+msgstr "Formular für die Angebotsanfrage"
+
+#: admin/views/settings-appearance.php:146
+msgid "Quote request window"
+msgstr "Fenster für die Angebotsanfrage"
+
+#: admin/views/settings-restrictions.php:376
+msgid "Range: 1–1440 minutes. Default: 10."
+msgstr "Bereich: 1–1440 Minuten. Standard: 10."
+
+#: admin/views/settings-restrictions.php:306
+msgid "Range: 1–15 seconds. Default: 3."
+msgstr "Bereich: 1–15 Sekunden. Standard: 3."
+
+#: admin/views/settings-restrictions.php:358
+msgid "Range: 1–50. Default: 5."
+msgstr "Bereich: 1–50. Standard: 5."
+
+#: includes/class-musomo-quote-tools.php:379
+msgid "Rate limit:"
+msgstr "Ratenbegrenzung:"
+
+#: admin/views/partial-tools-diagnostics.php:145
+#: admin/views/settings-restrictions.php:258
+#: admin/views/settings-restrictions.php:334
+msgid "Rate protection"
+msgstr "Frequenzschutz"
+
+#: admin/views/settings-cf7-builder.php:299
+msgid "Recommended From: [_site_title] &lt;wordpress@[_site_domain]&gt; — Reply-To: [your-email]. Do not use [your-email] as From."
+msgstr "Empfohlen From: [_site_title] &lt;wordpress@[_site_domain]&gt; — Reply-To: [your-email]. Verwende [your-email] nicht als From."
+
+#: admin/views/settings-general.php:48
+msgid "Replace “Add to cart”"
+msgstr "„In den Warenkorb“ ersetzen"
+
+#: admin/views/settings-appearance.php:86
+msgid "Request a Quote button"
+msgstr "Button „Angebot anfordern“"
+
+#: admin/views/settings-cf7-builder.php:112
+#: admin/views/settings-cf7-builder.php:127
+msgid "Required"
+msgstr "Erforderlich"
+
+#: admin/views/partial-tools-diagnostics.php:240
+msgid "Reset plugin"
+msgstr "Plugin zurücksetzen"
+
+#: admin/views/partial-tools-diagnostics.php:242
+msgid "Restore all Musomo Quote settings to defaults. Does not delete products, orders, CF7 forms, or other plugin settings."
+msgstr "Setzt alle Einstellungen von Musomo Quote auf die Standardwerte zurück. Produkte, Bestellungen, CF7-Formulare und Einstellungen anderer Plugins werden nicht gelöscht."
+
+#: admin/views/partial-tools-diagnostics.php:255
+msgid "Restore all settings"
+msgstr "Alle Einstellungen zurücksetzen"
+
+#: admin/views/settings-cf7-builder.php:336
+msgid "Restore CF7 Template"
+msgstr "CF7-Vorlage zurücksetzen"
+
+#: admin/views/settings-restrictions.php:212
+msgid "Restore default restrictions"
+msgstr "Standardeinschränkungen wiederherstellen"
+
+#: admin/views/settings-restrictions.php:210
+msgid "Restore default restrictions?"
+msgstr "Standardeinschränkungen wiederherstellen?"
+
+#: admin/views/settings-translations.php:261
+msgid "Restore default texts"
+msgstr "Standardtexte wiederherstellen"
+
+#: admin/views/settings-translations.php:259
+msgid "Restore default texts?"
+msgstr "Standardtexte wiederherstellen?"
+
+#: admin/views/settings-appearance.php:297
+msgid "Restore defaults"
+msgstr "Standardwerte wiederherstellen"
+
+#: admin/views/settings-translations.php:347
+msgid "Restore multilingual overrides"
+msgstr "Mehrsprachige Überschreibungen zurücksetzen"
+
+#: admin/views/settings-appearance.php:296
+msgid "Restore only Appearance settings to defaults?"
+msgstr "Nur die Einstellungen der Darstellung auf die Standardwerte zurücksetzen?"
+
+#: admin/views/settings-cf7-builder.php:334
+msgid "Restore only CF7 Template preferences?"
+msgstr "Nur die Einstellungen der CF7-Vorlage zurücksetzen?"
+
+#: admin/views/settings-translations.php:336
+msgid "Restore only default global texts? Language overrides will not be cleared."
+msgstr "Nur die globalen Standardtexte wiederherstellen? Die sprachspezifischen Überschreibungen werden nicht gelöscht."
+
+#: admin/views/settings-restrictions.php:389
+msgid "Restore only security settings?"
+msgstr "Nur die Sicherheitseinstellungen zurücksetzen?"
+
+#: admin/views/settings-restrictions.php:391
+msgid "Restore security"
+msgstr "Sicherheit zurücksetzen"
+
+#: admin/views/settings-translations.php:338
+msgid "Restore texts"
+msgstr "Texte wiederherstellen"
+
+#: admin/views/partial-header.php:49
+#: admin/views/partial-tools-diagnostics.php:135
+#: admin/views/settings-restrictions.php:14
+msgid "Restrictions"
+msgstr "Einschränkungen"
+
+#: includes/class-musomo-quote-tools.php:373
+msgid "Restrictions:"
+msgstr "Einschränkungen:"
+
+#: admin/views/settings-restrictions.php:51
+msgid "Rules are combined. The button is shown only when all active restrictions are satisfied."
+msgstr "Die Regeln werden kombiniert. Der Button wird nur angezeigt, wenn alle aktiven Einschränkungen erfüllt sind."
+
+#: admin/views/settings-appearance.php:295
+msgid "Save appearance"
+msgstr "Darstellung speichern"
+
+#: admin/views/settings-cf7-builder.php:328
+msgid "Save CF7 Template"
+msgstr "CF7-Vorlage speichern"
+
+#: admin/views/settings-general.php:144
+#: admin/views/settings-restrictions.php:204
+#: admin/views/settings-restrictions.php:383
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+#: admin/views/settings-translations.php:253
+#: admin/views/settings-translations.php:330
+msgid "Save texts"
+msgstr "Texte speichern"
+
+#: admin/views/placeholder.php:17
+msgid "Section coming soon"
+msgstr "Bereich demnächst verfügbar"
+
+#: admin/views/partial-tools-diagnostics.php:139
+msgid "Security"
+msgstr "Sicherheit"
+
+#: admin/views/settings-restrictions.php:218
+msgid "Security & antispam"
+msgstr "Sicherheit & Antispam"
+
+#: admin/views/settings-restrictions.php:227
+msgid "Security status"
+msgstr "Sicherheitsstatus"
+
+#: includes/class-musomo-quote-tools.php:375
+msgid "Security:"
+msgstr "Sicherheit:"
+
+#: admin/views/settings-general.php:109
+msgid "Select form…"
+msgstr "Formular auswählen…"
+
+#: admin/views/settings-restrictions.php:71
+msgid "Selected categories only"
+msgstr "Nur ausgewählte Kategorien"
+
+#: admin/views/settings-appearance.php:288
+msgid "SEND border radius"
+msgstr "Eckenradius SENDEN"
+
+#: admin/views/settings-appearance.php:280
+msgid "SEND button color"
+msgstr "Farbe des SENDEN-Buttons"
+
+#: admin/views/settings-appearance.php:350
+msgid "SEND REQUEST"
+msgstr "ANFRAGE SENDEN"
+
+#: includes/class-musomo-quote-cf7-builder.php:115
+#: includes/class-musomo-quote-cf7-builder.php:356
+#: includes/class-musomo-quote-cf7-builder.php:586
+msgid "Send request"
+msgstr "Anfrage senden"
+
+#: admin/views/partial-header.php:46
+#: admin/views/settings-general.php:14
+#: includes/class-musomo-quote-admin.php:72
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: admin/views/partial-tools-diagnostics.php:198
+msgid "Settings detected:"
+msgstr "Erkannte Einstellungen:"
+
+#: includes/class-musomo-quote-tools.php:896
+msgid "Settings restored."
+msgstr "Einstellungen wiederhergestellt."
+
+#: admin/views/dashboard.php:85
+msgid "Setup progress"
+msgstr "Fortschritt der Einrichtung"
+
+#: admin/views/settings-cf7-builder.php:189
+#: admin/views/settings-cf7-builder.php:303
+msgid "Show code"
+msgstr "Code anzeigen"
+
+#: admin/views/settings-appearance.php:220
+msgid "Show image"
+msgstr "Bild anzeigen"
+
+#: admin/views/settings-general.php:52
+msgid "Show only on selected products"
+msgstr "Nur bei ausgewählten Produkten anzeigen"
+
+#: admin/views/settings-appearance.php:228
+msgid "Show price"
+msgstr "Preis anzeigen"
+
+#: admin/views/settings-restrictions.php:62
+msgid "Show quote"
+msgstr "Angebot anzeigen"
+
+#: admin/views/settings-appearance.php:224
+msgid "Show SKU"
+msgstr "SKU anzeigen"
+
+#: admin/views/settings-cf7-builder.php:256
+msgid "Shown only if the corresponding field is enabled in the Form."
+msgstr "Wird nur angezeigt, wenn das entsprechende Feld im Formular aktiviert ist."
+
+#: admin/views/settings-restrictions.php:166
+msgid "Simple"
+msgstr "Einfach"
+
+#: admin/views/partial-tools-diagnostics.php:37
+msgid "Site language"
+msgstr "Sprache der Website"
+
+#: admin/views/settings-appearance.php:192
+msgid "Size"
+msgstr "Größe"
+
+#: admin/views/settings-cf7-builder.php:238
+msgid "SKU"
+msgstr "SKU"
+
+#: admin/views/settings-translations.php:214
+#: admin/views/settings-translations.php:48
+msgid "SKU label"
+msgstr "SKU-Beschriftung"
+
+#: includes/class-musomo-quote-cf7-builder.php:446
+#: includes/class-musomo-quote-cf7-builder.php:599
+msgid "SKU:"
+msgstr "SKU:"
+
+#: includes/class-musomo-quote-cf7-builder.php:553
+msgid "Smith"
+msgstr "Mustermann"
+
+#: admin/views/settings-restrictions.php:108
+msgid "Stock status"
+msgstr "Lagerstatus"
+
+#: admin/views/settings-appearance.php:67
+msgid "Style"
+msgstr "Stil"
+
+#: admin/views/settings-cf7-builder.php:304
+msgid "Subject"
+msgstr "Betreff"
+
+#: admin/views/settings-cf7-builder.php:161
+msgid "Submit button"
+msgstr "Absenden-Button"
+
+#: admin/views/settings-translations.php:248
+msgid "Submit button text and validation/success messages are managed directly by the Contact Form 7 form."
+msgstr "Der Text des Absenden-Buttons sowie die Validierungs- und Erfolgsmeldungen werden direkt vom Contact Form 7-Formular verwaltet."
+
+#: admin/views/settings-cf7-builder.php:165
+msgid "Submit text"
+msgstr "Text des Absenden-Buttons"
+
+#: admin/views/dashboard.php:239
+#: admin/views/partial-header.php:37
+msgid "Support"
+msgstr "Support"
+
+#: admin/views/dashboard.php:246
+msgid "support development on Ko-fi"
+msgstr "die Entwicklung auf Ko-fi unterstützen"
+
+#: admin/views/partial-tools-diagnostics.php:87
+msgid "System check"
+msgstr "Systemprüfung"
+
+#: admin/views/settings-translations.php:232
+msgid "System messages"
+msgstr "Systemmeldungen"
+
+#: admin/views/settings-cf7-builder.php:139
+msgid "Technical details"
+msgstr "Technische Details"
+
+#: admin/views/settings-cf7-builder.php:156
+msgid "Technical names are read-only. Do not rename them to maintain compatibility with Mu Quote."
+msgstr "Technische Namen sind schreibgeschützt. Ändere sie nicht, um die Kompatibilität mit Mu Quote zu erhalten."
+
+#: admin/views/dashboard.php:50
+msgid "Test & publish"
+msgstr "Testen & veröffentlichen"
+
+#: admin/views/settings-appearance.php:167
+#: admin/views/settings-appearance.php:93
+msgid "Text color"
+msgstr "Textfarbe"
+
+#: admin/views/settings-appearance.php:284
+msgid "Text color SEND"
+msgstr "Textfarbe SENDEN"
+
+#: admin/views/partial-header.php:48
+#: admin/views/settings-translations.php:14
+#: includes/class-musomo-quote-admin.php:90
+msgid "Texts & translations"
+msgstr "Texte & Übersetzungen"
+
+#: includes/class-musomo-quote-tools.php:506
+msgid "The file comes from a future plugin version. Import will proceed cautiously."
+msgstr "Die Datei stammt aus einer neueren Plugin-Version. Der Import wird vorsichtig fortgesetzt."
+
+#: includes/class-musomo-quote-tools.php:495
+msgid "The file does not belong to Musomo Quote."
+msgstr "Die Datei gehört nicht zu Musomo Quote."
+
+#: admin/views/settings-translations.php:300
+msgid "The global CF7 form is configured in Mu Quote → Settings (fallback)."
+msgstr "Das globale CF7-Formular wird unter Mu Quote → Einstellungen konfiguriert (Rückfallebene)."
+
+#: admin/views/placeholder.php:18
+msgid "This screen will be implemented in upcoming roadmap steps. The menu skeleton is already in place."
+msgstr "Diese Seite wird in den nächsten Schritten der Roadmap umgesetzt. Die Menüstruktur ist bereits vorhanden."
+
+#: includes/class-musomo-quote-admin.php:313
+msgid "This will restore all Musomo Quote settings. Continue?"
+msgstr "Dadurch werden alle Einstellungen von Musomo Quote zurückgesetzt. Fortfahren?"
+
+#: admin/views/partial-tools-diagnostics.php:143
+#: admin/views/settings-restrictions.php:282
+msgid "Time trap"
+msgstr "Zeitfalle"
+
+#: includes/class-musomo-quote-tools.php:377
+msgid "Time trap:"
+msgstr "Zeitfalle:"
+
+#: admin/views/partial-tools-diagnostics.php:38
+msgid "Timezone"
+msgstr "Zeitzone"
+
+#: includes/class-musomo-quote-tools.php:352
+msgid "Timezone:"
+msgstr "Zeitzone:"
+
+#: includes/class-musomo-quote-tools.php:897
+msgid "To confirm reset, type RESET in the confirmation field."
+msgstr "Gib zur Bestätigung des Zurücksetzens RESET in das Bestätigungsfeld ein."
+
+#: admin/views/partial-header.php:51
+#: admin/views/settings-tools.php:12
+#: includes/class-musomo-quote-admin.php:117
+msgid "Tools"
+msgstr "Werkzeuge"
+
+#: admin/views/dashboard.php:171
+msgid "Turnstile status"
+msgstr "Turnstile-Status"
+
+#: includes/class-musomo-quote-admin.php:312
+msgid "Type RESET to confirm the reset."
+msgstr "Gib RESET ein, um das Zurücksetzen zu bestätigen."
+
+#: admin/views/partial-tools-diagnostics.php:249
+msgid "Type RESET to confirm:"
+msgstr "Gib RESET ein, um zu bestätigen:"
+
+#: includes/class-musomo-quote-tools.php:898
+msgid "Unable to generate export."
+msgstr "Der Export konnte nicht erstellt werden."
+
+#: includes/class-musomo-quote-tools.php:484
+msgid "Unable to read the file."
+msgstr "Die Datei kann nicht gelesen werden."
+
+#: includes/class-musomo-quote-tools.php:517
+msgid "unknown"
+msgstr "unbekannt"
+
+#: admin/views/partial-tools-diagnostics.php:182
+msgid "Upload an exported JSON. Valid values are merged into current settings after sanitization. File limit: 1 MB."
+msgstr "Lade eine exportierte JSON-Datei hoch. Gültige Werte werden nach der Bereinigung mit den aktuellen Einstellungen zusammengeführt. Dateigrenze: 1 MB."
+
+#: admin/views/partial-tools-diagnostics.php:42
+msgid "upload_max_filesize"
+msgstr "upload_max_filesize"
+
+#: admin/views/dashboard.php:108
+msgid "Use CF7 Template to generate the Contact Form 7 form and email."
+msgstr "Nutze CF7-Vorlage, um das Formular und die E-Mail für Contact Form 7 zu erzeugen."
+
+#: admin/views/settings-translations.php:204
+#: admin/views/settings-translations.php:45
+msgid "Used as the aria-label on the modal close button."
+msgstr "Wird als aria-label für den Schließen-Button des Dialogfensters verwendet."
+
+#: admin/views/settings-restrictions.php:179
+#: admin/views/settings-restrictions.php:182
+msgid "Users"
+msgstr "Benutzer"
+
+#: admin/views/settings-restrictions.php:167
+msgid "Variable"
+msgstr "Variabel"
+
+#: admin/views/settings-appearance.php:247
+msgid "Vertical"
+msgstr "Vertikal"
+
+#: includes/class-musomo-quote-cf7-builder.php:496
+#: includes/class-musomo-quote-cf7-builder.php:608
+msgid "View product"
+msgstr "Produkt ansehen"
+
+#: admin/views/partial-tools-diagnostics.php:204
+msgid "Warnings:"
+msgstr "Warnungen:"
+
+#: includes/class-musomo-quote-cf7-builder.php:315
+#: includes/class-musomo-quote-cf7-builder.php:598
+#: includes/class-musomo-quote-security.php:199
+msgid "Website"
+msgstr "Webseite"
+
+#: admin/views/settings-appearance.php:135
+msgid "Width"
+msgstr "Breite"
+
+#: admin/views/settings-appearance.php:149
+msgid "Width desktop"
+msgstr "Breite auf dem Desktop"
+
+#: admin/views/settings-restrictions.php:363
+msgid "Window (minutes)"
+msgstr "Zeitfenster (Minuten)"
+
+#: includes/helpers.php:436
+msgid "With restrictions"
+msgstr "Mit Einschränkungen"
+
+#: admin/views/dashboard.php:132
+#: admin/views/partial-tools-diagnostics.php:119
+#: admin/views/partial-tools-diagnostics.php:44
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: includes/class-musomo-quote-tools.php:247
+msgid "WooCommerce is available."
+msgstr "WooCommerce ist verfügbar."
+
+#: includes/class-musomo-quote-tools.php:242
+msgid "WooCommerce is not active."
+msgstr "WooCommerce ist nicht aktiv."
+
+#: includes/class-musomo-quote-tools.php:357
+msgid "WooCommerce:"
+msgstr "WooCommerce:"
+
+#: admin/views/partial-tools-diagnostics.php:36
+msgid "WordPress"
+msgstr "WordPress"
+
+#: includes/class-musomo-quote-tools.php:350
+msgid "WordPress:"
+msgstr "WordPress:"
+
+#: includes/class-musomo-quote-tools.php:339
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/class-musomo-quote-tools.php:91
+msgid "You do not have permission for this operation."
+msgstr "Du hast keine Berechtigung für diesen Vorgang."
+
+#: admin/views/settings-appearance.php:82
+msgid "“Inherit from theme” blends the button with the site style. “Musomo” applies the plugin design. “Custom” enables the controls below."
+msgstr "„Vom Theme übernehmen“ passt den Button an den Stil der Website an. „Musomo“ verwendet das Design des Plugins. „Individuell“ aktiviert die Steuerelemente unten."
+

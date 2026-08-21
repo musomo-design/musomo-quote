@@ -332,38 +332,51 @@ class Musomo_Quote_Tools {
 	 * @return string
 	 */
 	public static function get_system_info_text() {
-		$env  = self::get_environment_info();
-		$cfg  = self::get_configuration_status();
+		$env   = self::get_environment_info();
+		$cfg   = self::get_configuration_status();
 		$lines = array();
 
-		$lines[] = 'Musomo Quote System Info';
+		$yes = __( 'Yes', 'musomo-quote' );
+		$no  = __( 'No', 'musomo-quote' );
+		$on  = __( 'ON', 'musomo-quote' );
+		$off = __( 'OFF', 'musomo-quote' );
+		$na  = __( 'Not active', 'musomo-quote' );
+		$act = __( 'Active', 'musomo-quote' );
+
+		$lines[] = __( 'Musomo Quote System Info', 'musomo-quote' );
 		$lines[] = '------------------------';
 		$lines[] = '';
-		$lines[] = 'Musomo Quote: ' . $env['musomo_quote']['version'];
-		$lines[] = 'WordPress: ' . $env['wordpress']['version'];
-		$lines[] = 'Locale: ' . $env['wordpress']['language'];
-		$lines[] = 'Timezone: ' . $env['wordpress']['timezone'];
-		$lines[] = 'PHP: ' . $env['php']['version'];
-		$lines[] = 'PHP memory_limit: ' . $env['php']['memory_limit'];
-		$lines[] = 'PHP max_execution_time: ' . $env['php']['max_execution_time'];
-		$lines[] = 'PHP upload_max_filesize: ' . $env['php']['upload_max_filesize'];
-		$lines[] = 'WooCommerce: ' . ( $env['woocommerce']['active'] ? $env['woocommerce']['version'] : 'Not active' );
-		$lines[] = 'Contact Form 7: ' . ( $env['cf7']['active'] ? ( $env['cf7']['version'] ? $env['cf7']['version'] : 'Active' ) : 'Not active' );
-		$lines[] = 'Polylang: ' . ( $env['polylang']['active']
-			? ( $env['polylang']['version'] ? $env['polylang']['version'] : 'Active' ) . ' (' . (int) $env['polylang']['languages'] . ' languages)'
-			: 'Not active' );
+		$lines[] = __( 'Musomo Quote:', 'musomo-quote' ) . ' ' . $env['musomo_quote']['version'];
+		$lines[] = __( 'WordPress:', 'musomo-quote' ) . ' ' . $env['wordpress']['version'];
+		$lines[] = __( 'Locale:', 'musomo-quote' ) . ' ' . $env['wordpress']['language'];
+		$lines[] = __( 'Timezone:', 'musomo-quote' ) . ' ' . $env['wordpress']['timezone'];
+		$lines[] = __( 'PHP:', 'musomo-quote' ) . ' ' . $env['php']['version'];
+		$lines[] = __( 'PHP memory_limit:', 'musomo-quote' ) . ' ' . $env['php']['memory_limit'];
+		$lines[] = __( 'PHP max_execution_time:', 'musomo-quote' ) . ' ' . $env['php']['max_execution_time'];
+		$lines[] = __( 'PHP upload_max_filesize:', 'musomo-quote' ) . ' ' . $env['php']['upload_max_filesize'];
+		$lines[] = __( 'WooCommerce:', 'musomo-quote' ) . ' ' . ( $env['woocommerce']['active'] ? $env['woocommerce']['version'] : $na );
+		$lines[] = __( 'Contact Form 7:', 'musomo-quote' ) . ' ' . ( $env['cf7']['active'] ? ( $env['cf7']['version'] ? $env['cf7']['version'] : $act ) : $na );
+		/* translators: 1: Polylang status/version, 2: number of languages */
+		$lines[] = __( 'Polylang:', 'musomo-quote' ) . ' ' . ( $env['polylang']['active']
+			? sprintf(
+				/* translators: 1: Polylang version or Active label, 2: number of languages */
+				__( '%1$s (%2$d languages)', 'musomo-quote' ),
+				$env['polylang']['version'] ? $env['polylang']['version'] : $act,
+				(int) $env['polylang']['languages']
+			)
+			: $na );
 		$lines[] = '';
-		$lines[] = 'Plugin enabled: ' . ( $env['musomo_quote']['enabled'] ? 'Yes' : 'No' );
-		$lines[] = 'Mode: ' . $env['musomo_quote']['mode'];
-		$lines[] = 'CF7 form: ' . $cfg['cf7_form_label'];
-		$lines[] = 'Appearance: ' . $cfg['appearance'];
-		$lines[] = 'Restrictions: ' . ( $cfg['restrictions'] ? 'Active' : 'None' );
+		$lines[] = __( 'Plugin enabled:', 'musomo-quote' ) . ' ' . ( $env['musomo_quote']['enabled'] ? $yes : $no );
+		$lines[] = __( 'Mode:', 'musomo-quote' ) . ' ' . $env['musomo_quote']['mode'];
+		$lines[] = __( 'CF7 form:', 'musomo-quote' ) . ' ' . $cfg['cf7_form_label'];
+		$lines[] = __( 'Appearance:', 'musomo-quote' ) . ' ' . $cfg['appearance'];
+		$lines[] = __( 'Restrictions:', 'musomo-quote' ) . ' ' . ( $cfg['restrictions'] ? $act : __( 'None', 'musomo-quote' ) );
 		$lines[] = '';
-		$lines[] = 'Security:';
-		$lines[] = 'Honeypot: ' . ( $cfg['honeypot'] ? 'ON' : 'OFF' );
-		$lines[] = 'Time trap: ' . ( $cfg['time_trap'] ? 'ON' : 'OFF' );
-		$lines[] = 'Content filter: ' . ( $cfg['content_filter'] ? 'ON' : 'OFF' );
-		$lines[] = 'Rate limit: ' . ( $cfg['rate_protection'] ? 'ON' : 'OFF' );
+		$lines[] = __( 'Security:', 'musomo-quote' );
+		$lines[] = __( 'Honeypot:', 'musomo-quote' ) . ' ' . ( $cfg['honeypot'] ? $on : $off );
+		$lines[] = __( 'Time trap:', 'musomo-quote' ) . ' ' . ( $cfg['time_trap'] ? $on : $off );
+		$lines[] = __( 'Content filter:', 'musomo-quote' ) . ' ' . ( $cfg['content_filter'] ? $on : $off );
+		$lines[] = __( 'Rate limit:', 'musomo-quote' ) . ' ' . ( $cfg['rate_protection'] ? $on : $off );
 
 		return implode( "\n", $lines );
 	}

@@ -3,7 +3,7 @@ Contributors: musomo
 Donate link: https://ko-fi.com/musomo
 Tags: woocommerce, quote request, request a quote, contact form 7, product inquiry
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Stable tag: 2.0.0
 Requires PHP: 7.4
 License: GPLv2 or later

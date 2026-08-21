@@ -112,11 +112,12 @@ class Musomo_Quote_CF7_Builder {
 					'required' => true,
 				),
 			),
-			'submit_text' => 'Send request',
+			'submit_text' => __( 'Send request', 'musomo-quote' ),
 			'email'       => array(
-				'header_title'           => 'Quote request',
+				'header_title'           => __( 'Quote request', 'musomo-quote' ),
 				'company_name'           => '',
-				'subject'                => 'New quote request — [musomo_product_name]',
+				/* translators: CF7 mail-tag [musomo_product_name] must stay unchanged. */
+				'subject'                => __( 'New quote request — [musomo_product_name]', 'musomo-quote' ),
 				'show_product_image'     => true,
 				'show_product_name'      => true,
 				'show_sku'               => true,
@@ -311,7 +312,7 @@ class Musomo_Quote_CF7_Builder {
 			return $name;
 		}
 		$blog = get_bloginfo( 'name' );
-		return is_string( $blog ) && '' !== $blog ? $blog : 'Website';
+		return is_string( $blog ) && '' !== $blog ? $blog : __( 'Website', 'musomo-quote' );
 	}
 
 	/**
@@ -352,7 +353,7 @@ class Musomo_Quote_CF7_Builder {
 		}
 
 		$lines[] = '';
-		$submit  = isset( $config['submit_text'] ) ? $config['submit_text'] : 'Send request';
+		$submit  = isset( $config['submit_text'] ) ? $config['submit_text'] : __( 'Send request', 'musomo-quote' );
 		$submit  = str_replace( array( '\\', '"' ), array( '', "'" ), $submit );
 		$lines[] = '[submit "' . $submit . '"]';
 
@@ -420,7 +421,7 @@ class Musomo_Quote_CF7_Builder {
 		$email   = $config['email'];
 		$fields  = $config['fields'];
 		$company = self::resolve_company_name( $config );
-		$title   = isset( $email['header_title'] ) ? $email['header_title'] : 'Quote request';
+		$title   = isset( $email['header_title'] ) ? $email['header_title'] : __( 'Quote request', 'musomo-quote' );
 
 		$company_esc = htmlspecialchars( $company, ENT_QUOTES, 'UTF-8' );
 		$title_esc   = htmlspecialchars( $title, ENT_QUOTES, 'UTF-8' );
@@ -441,13 +442,16 @@ class Musomo_Quote_CF7_Builder {
 
 		$meta = array();
 		if ( ! empty( $email['show_sku'] ) ) {
-			$meta[] = 'SKU: [musomo_product_sku]';
+			/* translators: preceding CF7 mail-tag [musomo_product_sku] in generated email template */
+			$meta[] = __( 'SKU:', 'musomo-quote' ) . ' [musomo_product_sku]';
 		}
 		if ( ! empty( $email['show_price'] ) ) {
-			$meta[] = 'Price: [musomo_product_price]';
+			/* translators: preceding CF7 mail-tag [musomo_product_price] in generated email template */
+			$meta[] = __( 'Price:', 'musomo-quote' ) . ' [musomo_product_price]';
 		}
 		if ( ! empty( $email['show_quantity'] ) ) {
-			$meta[] = 'Quantity: [musomo_quantity]';
+			/* translators: preceding CF7 mail-tag [musomo_quantity] in generated email template */
+			$meta[] = __( 'Quantity:', 'musomo-quote' ) . ' [musomo_quantity]';
 		}
 		if ( ! empty( $meta ) ) {
 			$rows_product .= '<tr><td style="padding:0 0 8px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#444444;line-height:1.6;">'
@@ -457,19 +461,19 @@ class Musomo_Quote_CF7_Builder {
 
 		$customer_lines = array();
 		if ( ! empty( $email['show_customer_name'] ) && ! empty( $fields['name']['enabled'] ) ) {
-			$customer_lines[] = array( 'Name', '[your-name]' );
+			$customer_lines[] = array( __( 'Name', 'musomo-quote' ), '[your-name]' );
 		}
 		if ( ! empty( $email['show_customer_lastname'] ) && ! empty( $fields['lastname']['enabled'] ) ) {
-			$customer_lines[] = array( 'Last name', '[your-lastname]' );
+			$customer_lines[] = array( __( 'Last name', 'musomo-quote' ), '[your-lastname]' );
 		}
 		if ( ! empty( $email['show_company'] ) && ! empty( $fields['company']['enabled'] ) ) {
-			$customer_lines[] = array( 'Company', '[your-company]' );
+			$customer_lines[] = array( __( 'Company', 'musomo-quote' ), '[your-company]' );
 		}
 		if ( ! empty( $email['show_email'] ) && ! empty( $fields['email']['enabled'] ) ) {
-			$customer_lines[] = array( 'Email', '[your-email]' );
+			$customer_lines[] = array( __( 'Email', 'musomo-quote' ), '[your-email]' );
 		}
 		if ( ! empty( $email['show_phone'] ) && ! empty( $fields['phone']['enabled'] ) ) {
-			$customer_lines[] = array( 'Phone', '[your-phone]' );
+			$customer_lines[] = array( __( 'Phone', 'musomo-quote' ), '[your-phone]' );
 		}
 
 		foreach ( $customer_lines as $line ) {
@@ -481,7 +485,7 @@ class Musomo_Quote_CF7_Builder {
 
 		if ( ! empty( $email['show_message'] ) && ! empty( $fields['message']['enabled'] ) ) {
 			$message_block = '<tr><td style="padding:20px 24px;border-top:1px solid #e5e5e5;">'
-				. '<p style="margin:0 0 8px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888888;">Message</p>'
+				. '<p style="margin:0 0 8px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888888;">' . esc_html__( 'Message', 'musomo-quote' ) . '</p>'
 				. '<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#333333;line-height:1.6;">[your-message]</p>'
 				. '</td></tr>';
 		}
@@ -489,7 +493,7 @@ class Musomo_Quote_CF7_Builder {
 		$url_block = '';
 		if ( ! empty( $email['show_product_url'] ) ) {
 			$url_block = '<tr><td style="padding:20px 24px;border-top:1px solid #e5e5e5;">'
-				. '<a href="[musomo_product_url]" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#014b43;text-decoration:underline;">View product</a>'
+				. '<a href="[musomo_product_url]" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#014b43;text-decoration:underline;">' . esc_html__( 'View product', 'musomo-quote' ) . '</a>'
 				. '</td></tr>';
 		}
 
@@ -504,7 +508,7 @@ class Musomo_Quote_CF7_Builder {
 		$customer_section = '';
 		if ( '' !== $rows_customer ) {
 			$customer_section = '<tr><td style="padding:20px 24px;border-top:1px solid #e5e5e5;">'
-				. '<p style="margin:0 0 12px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888888;">Customer</p>'
+				. '<p style="margin:0 0 12px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888888;">' . esc_html__( 'Customer', 'musomo-quote' ) . '</p>'
 				. '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">'
 				. $rows_customer
 				. '</table></td></tr>';
@@ -540,17 +544,17 @@ class Musomo_Quote_CF7_Builder {
 	 */
 	public static function demo_preview_data() {
 		return array(
-			'product_name'  => 'Organic dad hat',
+			'product_name'  => __( 'Organic dad hat', 'musomo-quote' ),
 			'sku'           => 'ABC123',
 			'price'         => '€23.50',
 			'quantity'      => '4',
 			'product_url'   => '#',
-			'customer_name' => 'John',
-			'lastname'      => 'Smith',
-			'company'       => 'Example Company',
+			'customer_name' => __( 'John', 'musomo-quote' ),
+			'lastname'      => __( 'Smith', 'musomo-quote' ),
+			'company'       => __( 'Example Company', 'musomo-quote' ),
 			'email'         => 'john@example.com',
 			'phone'         => '+1 555 0100',
-			'message'       => 'Hello, I would like information about this product.',
+			'message'       => __( 'Hello, I would like information about this product.', 'musomo-quote' ),
 			'image'         => MUSOMO_QUOTE_URL . 'assets/07-icon.svg',
 		);
 	}
@@ -572,20 +576,39 @@ class Musomo_Quote_CF7_Builder {
 		}
 
 		return array(
-			'config'         => $config,
-			'fields'         => $defs,
-			'productHidden'  => self::product_hidden_fields(),
-			'demo'           => self::demo_preview_data(),
-			'siteName'       => self::resolve_company_name( $config ),
-			'copied'         => __( 'Copied!', 'musomo-quote' ),
-			'copyFailed'     => __( 'Copy failed', 'musomo-quote' ),
-			'defaultSubmit'  => 'Send request',
-			'logoUrl'        => MUSOMO_QUOTE_URL . 'assets/08-logo.svg',
-			'iconUrl'        => MUSOMO_QUOTE_URL . 'assets/07-icon.svg',
-			'formCode'       => self::generate_form_code( $config ),
-			'emailHtml'      => self::generate_email_html( $config ),
-			'subject'        => self::generate_subject( $config ),
-			'replyTo'        => self::generate_reply_to_header( $config ),
+			'config'        => $config,
+			'fields'        => $defs,
+			'productHidden' => self::product_hidden_fields(),
+			'demo'          => self::demo_preview_data(),
+			'siteName'      => self::resolve_company_name( $config ),
+			'copied'        => __( 'Copied!', 'musomo-quote' ),
+			'copyFailed'    => __( 'Copy failed', 'musomo-quote' ),
+			'defaultSubmit' => __( 'Send request', 'musomo-quote' ),
+			'logoUrl'       => MUSOMO_QUOTE_URL . 'assets/08-logo.svg',
+			'iconUrl'       => MUSOMO_QUOTE_URL . 'assets/07-icon.svg',
+			'formCode'      => self::generate_form_code( $config ),
+			'emailHtml'     => self::generate_email_html( $config ),
+			'subject'       => self::generate_subject( $config ),
+			'replyTo'       => self::generate_reply_to_header( $config ),
+			'i18n'          => array(
+				'sendRequest'  => __( 'Send request', 'musomo-quote' ),
+				'quoteRequest' => __( 'Quote request', 'musomo-quote' ),
+				/* translators: CF7 mail-tag [musomo_product_name] must stay unchanged. */
+				'subject'      => __( 'New quote request — [musomo_product_name]', 'musomo-quote' ),
+				'website'      => __( 'Website', 'musomo-quote' ),
+				'sku'          => __( 'SKU:', 'musomo-quote' ),
+				'price'        => __( 'Price:', 'musomo-quote' ),
+				'quantity'     => __( 'Quantity:', 'musomo-quote' ),
+				'name'         => __( 'Name', 'musomo-quote' ),
+				'lastName'     => __( 'Last name', 'musomo-quote' ),
+				'company'      => __( 'Company', 'musomo-quote' ),
+				'email'        => __( 'Email', 'musomo-quote' ),
+				'phone'        => __( 'Phone', 'musomo-quote' ),
+				'message'      => __( 'Message', 'musomo-quote' ),
+				'viewProduct'  => __( 'View product', 'musomo-quote' ),
+				'customer'     => __( 'Customer', 'musomo-quote' ),
+				'copyFailed'   => __( 'Copy failed', 'musomo-quote' ),
+			),
 		);
 	}
 }
