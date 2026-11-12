@@ -3,7 +3,7 @@
  * Plugin Name:       Musomo Quote
  * Plugin URI:        https://musomo.net/musomo-quote-woocommerce-plugin/
  * Description:       Request a quote button and modal for WooCommerce, powered by Contact Form 7.
- * Version:           2.0.0
+ * Version:           2.0.1
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Musomo
@@ -20,7 +20,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'MUSOMO_QUOTE_VERSION', '2.0.0' );
+define( 'MUSOMO_QUOTE_VERSION', '2.0.1' );
 define( 'MUSOMO_QUOTE_FILE', __FILE__ );
 define( 'MUSOMO_QUOTE_PATH', plugin_dir_path( __FILE__ ) );
 define( 'MUSOMO_QUOTE_URL', plugin_dir_url( __FILE__ ) );

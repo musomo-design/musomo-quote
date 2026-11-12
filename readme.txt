@@ -4,7 +4,7 @@ Donate link: https://ko-fi.com/musomo
 Tags: woocommerce, quote request, request a quote, contact form 7, product inquiry
 Requires at least: 6.0
 Tested up to: 7.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -104,6 +104,13 @@ No. Contact Form 7 handles submissions and email delivery. Musomo Quote does not
 
 == Changelog ==
 
+= 2.0.1 =
+
+* Added bundled Italian, German, French, and Spanish translations.
+* Tested with WordPress 7.1.
+* Excluded hidden and development files from the installable ZIP.
+* Kept bundled translation loading for private ZIP installs on WordPress 6.0 and newer.
+
 = 2.0.0 =
 
 * Initial public release.
@@ -111,6 +118,10 @@ No. Contact Form 7 handles submissions and email delivery. Musomo Quote does not
 * Added WordPress.org-ready readme metadata for the 2.0.0 presentation package.
 
 == Upgrade Notice ==
+
+= 2.0.1 =
+
+Bundled translations and a clean installable ZIP.
 
 = 2.0.0 =
 
