@@ -94,10 +94,16 @@ final class Musomo_Quote {
 	}
 
 	/**
-	 * Load bundled translations for the admin/user locale.
+	 * Register bundled translations for the admin and site locale.
 	 *
-	 * Bundled .mo files in /languages are required for ZIP installs and for
-	 * locales not yet served as WordPress.org language packs.
+	 * Plugin Check warns that load_plugin_textdomain() is unnecessary on
+	 * WordPress.org, where language packs load on their own. This plugin is
+	 * also installed from a private ZIP and supports WordPress 6.0+.
+	 * Automatic loading from the Domain Path header exists only since
+	 * WordPress 6.8, so removing this call would skip languages/*.mo on
+	 * 6.0-6.7. On 6.7 and newer the call only registers /languages for
+	 * just-in-time loading. A pack in wp-content/languages/plugins/ still
+	 * takes priority over the bundled file.
 	 */
 	public function load_textdomain() {
 		load_plugin_textdomain(
