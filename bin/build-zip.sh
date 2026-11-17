@@ -4,6 +4,8 @@
 # The Git checkout keeps development files such as .gitignore and .github.
 # Plugin Check rejects those hidden files in a distributed package, so this
 # script copies the plugin to a clean tree and zips only that tree.
+# WordPress.org generates and distributes translation catalogs through
+# translate.wordpress.org, so PO/MO files are intentionally excluded here.
 #
 # Usage:
 #   bin/build-zip.sh
@@ -59,6 +61,8 @@ rsync -a \
 	--exclude '*.log' \
 	--exclude '*.swp' \
 	--exclude '*.swo' \
+	--exclude 'languages/*.po' \
+	--exclude 'languages/*.mo' \
 	--exclude '*~' \
 	--exclude 'composer.json' \
 	--exclude 'composer.lock' \
@@ -85,14 +89,6 @@ required=(
 	LICENSE
 	languages/index.php
 	languages/musomo-quote.pot
-	languages/musomo-quote-it_IT.mo
-	languages/musomo-quote-it_IT.po
-	languages/musomo-quote-de_DE.mo
-	languages/musomo-quote-de_DE.po
-	languages/musomo-quote-fr_FR.mo
-	languages/musomo-quote-fr_FR.po
-	languages/musomo-quote-es_ES.mo
-	languages/musomo-quote-es_ES.po
 )
 
 for relative in "${required[@]}"; do
@@ -102,20 +98,6 @@ for relative in "${required[@]}"; do
 done
 
 shopt -s nullglob
-mo_files=("$PLUGIN_STAGE"/languages/*.mo)
-if [[ "${#mo_files[@]}" -eq 0 ]]; then
-	fail "no bundled .mo catalogs were staged"
-fi
-
-for mo in "${mo_files[@]}"; do
-	magic="$(od -An -t x1 -N 4 "$mo" | tr -d '[:space:]')"
-	case "$magic" in
-		de120495|950412de) ;;
-		*) fail "invalid gettext catalog: ${mo#"$PLUGIN_STAGE/"} ($magic)" ;;
-	esac
-done
-shopt -u nullglob
-
 rm -f "$OUT"
 (
 	cd "$STAGE"

@@ -55,7 +55,6 @@ final class Musomo_Quote {
 	private function init_hooks() {
 		register_activation_hook( MUSOMO_QUOTE_FILE, array( $this, 'activate' ) );
 		add_action( 'before_woocommerce_init', array( $this, 'declare_woocommerce_feature_compatibility' ) );
-		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		add_action( 'plugins_loaded', array( $this, 'init' ), 20 );
 	}
 
@@ -91,26 +90,6 @@ final class Musomo_Quote {
 		if ( false === get_option( 'musomo_quote_settings', false ) ) {
 			add_option( 'musomo_quote_settings', musomo_quote_default_settings() );
 		}
-	}
-
-	/**
-	 * Register bundled translations for the admin and site locale.
-	 *
-	 * Plugin Check warns that load_plugin_textdomain() is unnecessary on
-	 * WordPress.org, where language packs load on their own. This plugin is
-	 * also installed from a private ZIP and supports WordPress 6.0+.
-	 * Automatic loading from the Domain Path header exists only since
-	 * WordPress 6.8, so removing this call would skip languages/*.mo on
-	 * 6.0-6.7. On 6.7 and newer the call only registers /languages for
-	 * just-in-time loading. A pack in wp-content/languages/plugins/ still
-	 * takes priority over the bundled file.
-	 */
-	public function load_textdomain() {
-		load_plugin_textdomain(
-			'musomo-quote',
-			false,
-			dirname( MUSOMO_QUOTE_BASENAME ) . '/languages'
-		);
 	}
 
 	/**
